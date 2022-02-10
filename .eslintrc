@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "root": true,
+//  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "typescript": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "requireConfigFile": false
+//    "parser": "babel-eslint"
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:nuxt/recommended"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "rules": {
+    "comma-dangle": [2, "always"],
+    "vue/multi-word-component-names": "off",
+    "vue/component-definition-name-casing": "off"
+  }
+}
