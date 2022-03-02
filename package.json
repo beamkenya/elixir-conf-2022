@@ -16,5 +16,8 @@
     "nuxt3": "latest",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.18"
+  },
+  "dependencies": {
+    "daisyui": "^2.2.1"
   }
 }

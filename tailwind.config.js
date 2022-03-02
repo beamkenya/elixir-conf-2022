@@ -8,7 +8,20 @@ module.exports = {
     './app.vue',
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+      colors: {
+        dark: '#22272D',
+        // light
+        primary: '#3b1d82',
+        // dark
+        'primary-dark': '#fff',
+      },
+    },
   },
-  plugins: [],
+  // eslint-disable-next-line comma-spacing
+  plugins: [require('daisyui',),],
+  darkMode: 'class',
 }
