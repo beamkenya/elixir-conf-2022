@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="container mx-auto px-2 md:px-12 lg:px-32 py-2 md:py-4">
+    <div class="d-container py-2 md:py-4">
       <div class="navbar bg-base-100 bg-transparent">
         <div class="navbar-start">
           <div class="dropdown">
@@ -14,7 +14,7 @@
             </ul>
           </div>
           <router-link to="/">
-            <img class="w-72 md:w-52" src="/images/logo.png" alt="logo">
+            <img class="w-72 md:w-52 -ml-4" src="/images/logo.png" alt="logo">
           </router-link>
         </div>
         <div class="navbar-center hidden lg:flex">

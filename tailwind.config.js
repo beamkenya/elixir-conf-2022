@@ -13,15 +13,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: '#22272D',
         // light
-        primary: '#3b1d82',
+        primary: '#AD3889',
+        secondary: '#112943',
         // dark
+        dark: '#22272D',
         'primary-dark': '#fff',
+        'secondary-dark': '#B5C4CD',
       },
     },
   },
   // eslint-disable-next-line comma-spacing
   plugins: [require('daisyui',),],
   darkMode: 'class',
+  important: true,
 }

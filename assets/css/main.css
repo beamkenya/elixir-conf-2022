@@ -4,6 +4,9 @@
 
 @layer components {
     .btn-primary {
-        @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark;
+        @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark border-0;
+    }
+    .d-container {
+        @apply container mx-auto px-2 md:px-12 lg:px-32
     }
 }
