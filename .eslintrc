@@ -24,8 +24,15 @@
     "vue"
   ],
   "rules": {
-    "comma-dangle": [2, "always"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }],
     "vue/multi-word-component-names": "off",
-    "vue/component-definition-name-casing": "off"
+    "vue/component-definition-name-casing": "off",
+    "vue/no-multiple-template-root)": "off"
   }
 }

@@ -16,15 +16,21 @@ module.exports = {
         // light
         primary: '#AD3889',
         secondary: '#112943',
+        accent: '#f05423',
+        'light-text': '#999',
+        'dark-text': '#5B5E5E',
         // dark
         dark: '#22272D',
-        'primary-dark': '#fff',
-        'secondary-dark': '#B5C4CD',
+        'primary-dark': '#AD3889',
+        'secondary-dark': '#0E6D8F',
+        'accent-dark': '#f05423',
+        'light-text-dark': '#A69F94',
+        'dark-text-dark': '#B2ADA3',
       },
     },
   },
   // eslint-disable-next-line comma-spacing
-  plugins: [require('daisyui',),],
+  plugins: [require('daisyui')],
   darkMode: 'class',
   important: true,
 }

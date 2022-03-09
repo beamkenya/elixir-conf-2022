@@ -1,3 +1,17 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-slab: "Roboto Slab", sans-serif;
+}
+h1, h2, h3 {
+    font-family: var(--font-family);
+}
+h4, h5, h6 {
+    font-family: var(--font-slab);
+}
+p, .p, html, body {
+    font-family: var(--font-family);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +19,12 @@
 @layer components {
     .btn-primary {
         @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark border-0;
+    }
+    .btn-secondary {
+        @apply bg-secondary dark:bg-secondary-dark rounded-full hover:opacity-75 hover:bg-secondary dark:hover:bg-secondary-dark border-0;
+    }
+    .btn-accent {
+        @apply bg-accent dark:bg-accent-dark rounded-full hover:opacity-75 hover:bg-accent dark:hover:bg-accent-dark border-0;
     }
     .d-container {
         @apply container mx-auto px-2 md:px-12 lg:px-32

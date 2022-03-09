@@ -18,6 +18,7 @@
     "tailwindcss": "^3.0.18"
   },
   "dependencies": {
+    "@chenfengyuan/vue-countdown": "^2.0.0",
     "daisyui": "^2.2.1"
   }
 }
