@@ -18,15 +18,27 @@ p, .p, html, body {
 
 @layer components {
     .btn-primary {
-        @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark border-0;
+        @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark border-0 px-5 py-2;
     }
     .btn-secondary {
-        @apply bg-secondary dark:bg-secondary-dark rounded-full hover:opacity-75 hover:bg-secondary dark:hover:bg-secondary-dark border-0;
+        @apply bg-secondary dark:bg-secondary-dark rounded-full hover:opacity-75 hover:bg-secondary dark:hover:bg-secondary-dark border-0 px-5 py-2;
     }
     .btn-accent {
-        @apply bg-accent dark:bg-accent-dark rounded-full hover:opacity-75 hover:bg-accent dark:hover:bg-accent-dark border-0;
+        @apply bg-accent dark:bg-accent-dark rounded-full hover:opacity-75 hover:bg-accent dark:hover:bg-accent-dark border-0 px-5 py-2;
     }
     .d-container {
-        @apply container mx-auto px-2 md:px-12 lg:px-32
+        @apply container mx-auto px-4 md:px-12 lg:px-32
+    }
+    .title-2-secondary {
+        @apply text-2xl text-secondary dark:text-secondary-dark
+    }
+    .title-primary {
+        @apply text-primary dark:text-primary-dark text-3xl md:text-4xl font-bold
+    }
+    p {
+        @apply text-secondary dark:text-secondary-dark
+    }
+    .row {
+        @apply flex flex-col md:flex-row
     }
 }

@@ -16,7 +16,7 @@ import TopNav from './components/TopNav'
 }
 @media screen and (max-width: 600px) {
   .bg-background {
-    background-size: 50vw auto;
+    background-size: 60vw auto;
   }
 }
 </style>

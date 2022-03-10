@@ -12,7 +12,7 @@
             </ul>
           </div>
           <router-link to="/">
-            <img class="w-72 md:w-52 -ml-4" src="/images/logo.png" alt="logo">
+            <img class="w-80 md:w-60 -ml-4" src="/images/logo-purple.png" alt="logo">
           </router-link>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -21,7 +21,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn btn-primary">Buy Ticket</a>
+          <a class="btn-primary">Buy Ticket</a>
         </div>
       </div>
     </div>
