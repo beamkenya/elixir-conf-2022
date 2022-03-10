@@ -32,6 +32,6 @@ module.exports = {
   },
   // eslint-disable-next-line comma-spacing
   plugins: [require('daisyui')],
-  darkMode: 'media',
+  darkMode: 'class',
   important: true,
 }
