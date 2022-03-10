@@ -1,13 +1,15 @@
 <template>
   <div class="bg-white dark:bg-dark min-h-screen">
-   <div class="min-h-screen bg-no-repeat bg-right-top bg-background">
-     <top-nav />
-     <slot />
-   </div>
+    <div class="min-h-screen bg-no-repeat bg-right-top bg-background">
+      <top-nav />
+      <slot />
+      <footer-nav />
+    </div>
   </div>
 </template>
 <script setup>
 import TopNav from './components/TopNav'
+import FooterNav from './components/FooterNav'
 </script>
 <style>
 .bg-background {
