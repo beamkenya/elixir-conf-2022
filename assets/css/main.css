@@ -18,13 +18,13 @@ p, .p, html, body {
 
 @layer components {
     .btn-primary {
-        @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark border-0 px-5 py-2;
+        @apply bg-primary dark:bg-primary-dark rounded-full hover:opacity-75 hover:bg-primary dark:hover:bg-primary-dark border-0 px-6 py-2;
     }
     .btn-secondary {
-        @apply bg-secondary dark:bg-secondary-dark rounded-full hover:opacity-75 hover:bg-secondary dark:hover:bg-secondary-dark border-0 px-5 py-2;
+        @apply bg-secondary dark:bg-secondary-dark rounded-full hover:opacity-75 hover:bg-secondary dark:hover:bg-secondary-dark border-0 px-6 py-2;
     }
     .btn-accent {
-        @apply bg-accent dark:bg-accent-dark rounded-full hover:opacity-75 hover:bg-accent dark:hover:bg-accent-dark border-0 px-5 py-2;
+        @apply bg-accent dark:bg-accent-dark rounded-full hover:opacity-75 hover:bg-accent dark:hover:bg-accent-dark border-0 px-6 py-2;
     }
     .d-container {
         @apply container mx-auto px-4 md:px-12 lg:px-32
