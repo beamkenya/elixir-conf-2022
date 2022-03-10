@@ -26,11 +26,12 @@ module.exports = {
         'accent-dark': '#f05423',
         'light-text-dark': '#A69F94',
         'dark-text-dark': '#B2ADA3',
+        'secondary-dark-text': '#C8C5C0',
       },
     },
   },
   // eslint-disable-next-line comma-spacing
   plugins: [require('daisyui')],
-  darkMode: 'class',
+  darkMode: 'media',
   important: true,
 }

@@ -30,13 +30,13 @@ p, .p, html, body {
         @apply container mx-auto px-4 md:px-12 lg:px-32
     }
     .title-2-secondary {
-        @apply text-2xl text-secondary dark:text-secondary-dark
+        @apply text-2xl text-secondary dark:text-secondary-dark-text
     }
     .title-primary {
         @apply text-primary dark:text-primary-dark text-3xl md:text-4xl font-bold
     }
     p {
-        @apply text-secondary dark:text-secondary-dark
+        @apply text-secondary dark:text-secondary-dark-text
     }
     .row {
         @apply flex flex-col md:flex-row

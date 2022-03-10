@@ -4,7 +4,7 @@
       <div class="flex items-center">
         <div class="w-full md:w-1/3">
           <div>
-            <h5 class="text-secondary text-sm md:text-base dark:text-secondary-dark mt-12 md:mt-32">
+            <h5 class="text-secondary text-sm md:text-base dark:text-secondary-dark-text mt-12 md:mt-32">
               #The Largest Elixir Conference in Africa
             </h5>
             <h1 class="text-primary dark:text-primary-dark text-4xl md:text-7xl font-bold py-4 md:py-4">
