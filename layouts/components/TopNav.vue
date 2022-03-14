@@ -17,7 +17,7 @@
         </svg>
       </button>
     </div>
-    <!--    <toggle-theme />-->
+    <toggle-theme />
 
     <div
       id="nav-content"
@@ -57,9 +57,11 @@
 
 <script lang="ts">
 import { useState } from '#app'
+import ToggleTheme from '~/layouts/components/ToggleTheme.vue'
 
 export default {
   name: 'TopNav',
+  components: { ToggleTheme },
   setup () {
     const navVisible = useState('navVisible', () => false)
     const toggleNav = () => {

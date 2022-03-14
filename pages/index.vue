@@ -43,7 +43,7 @@
               This conference will be held virtually and is open to anyone from anywhere around the world, the event will incorporate among other things, technical and non-technical talks, with the main focus being how Elixir has been used to craft technological solutions aimed at addressing problems and issues within and outside of Africa.
             </p>
             <div class="my-5 md:my-10">
-              <router-link to="/about" class="btn-accent">
+              <router-link to="/" class="btn-accent">
                 More ABout ElixirConfAfr
               </router-link>
             </div>
