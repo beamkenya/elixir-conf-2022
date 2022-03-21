@@ -14,14 +14,12 @@ export const useTheme = () => {
   })
 
   const _addDarkTheme = () => {
-    console.log('dddd')
     localStorage.setItem('theme', 'dark')
     document.documentElement.classList.add('dark')
     isDarkTheme.value = true
   }
 
   const _removeDarkTheme = () => {
-    console.log('lll')
     localStorage.setItem('theme', 'light')
     document.documentElement.classList.remove('dark')
     isDarkTheme.value = false

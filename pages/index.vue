@@ -58,7 +58,9 @@
         <div class="flex justify-center">
           <shared-title>Sponsor ElixirConfAfr</shared-title>
         </div>
-        <p class="text-white text-center">Want to become a sponsor? Take a look at our <a class="text-primary dark:text-primary-dark" href="https://elixirconf.africa/ElixirConf%20Africa%20Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a></p>
+        <p class="text-white text-center">
+          Want to become a sponsor? Take a look at our <a class="text-primary dark:text-primary-dark" href="https://elixirconf.africa/ElixirConf%20Africa%20Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a>
+        </p>
         <div class="flex justify-center pt-3 md:pt-6">
           <a class="btn-accent" href="mailto:jambo@elixirconf.africa">Become A Sponsor</a>
         </div>
