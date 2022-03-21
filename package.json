@@ -4,7 +4,8 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
@@ -20,5 +21,9 @@
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^2.0.0",
     "daisyui": "^2.2.1"
+  },
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.3.0"
   }
 }
