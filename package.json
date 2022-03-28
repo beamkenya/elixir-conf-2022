@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^2.0.0",
-    "daisyui": "^2.2.1"
+    "daisyui": "^2.13.4"
   },
   "engines": {
     "node": "16.13.1",
