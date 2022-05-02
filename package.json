@@ -15,7 +15,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.6",
     "eslint": "^8.11.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "nuxt3": "latest",
