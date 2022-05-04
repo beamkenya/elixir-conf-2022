@@ -33,14 +33,14 @@ watchEffect(() => {
 
 .bg-background-1 {
   background: url(https://demo.themewinter.com/wp/exhibz/wp-content/uploads/2018/12/about-banner.jpg) 0% 0%;
-  background-size: 100% 40%;
+  background-size: 100% 350px;
 }
 @media screen and (max-width: 600px) {
   .bg-background {
     background-size: 60vw auto;
   }
   .bg-background-1 {
-    background-size: 100% 23%;
+    background-size: 100% 220px;
   }
 }
 </style>
