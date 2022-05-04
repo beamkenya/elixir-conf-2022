@@ -26,9 +26,9 @@
             <a v-for="(member, $index) in members" :key="$index" :href="member.link" class="text-center flex justify-center flex-wrap" target="_blank">
               <div class="w-24 h-24 md:w-36 md:h-36 p-2 md:p-4 flex justify-center bg-secondary dark:bg-secondary-dark rounded">
                 <img
-                    class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark"
-                    :src="member.photo === null ? '/icon.png' : member.photo"
-                    :alt="member.name"
+                  class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark"
+                  :src="member.photo === null ? '/icon.png' : member.photo"
+                  :alt="member.name"
                 >
               </div>
               <p class="text-base capitalize font-bold black mt-2 w-full">
