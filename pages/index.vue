@@ -14,7 +14,7 @@
               Elixir as a power tool
             </h3>
             <h5 class="text-primary dark:text-primary-dark">
-              <i class="fa fa-calendar" /> Conference: May 2022
+              <i class="fa fa-calendar" /> Conference: 16th - 17th May 2022
             </h5>
             <h5 class="text-primary dark:text-primary-dark">
               <i class="fa fa-map-marker" /> Virtual, Africa
@@ -23,7 +23,7 @@
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
             <a class="btn-secondary">Buy Ticket</a>
-            <a class="btn-accent">Call For Speakers</a>
+            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
           </div>
         </div>
       </div>
@@ -69,9 +69,3 @@
     <home-sponsors />
   </div>
 </template>
-
-<script>
-export default {
-  name: 'index',
-}
-</script>
