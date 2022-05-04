@@ -14,7 +14,7 @@
               Elixir as a power tool
             </h3>
             <h5 class="text-primary dark:text-primary-dark">
-              <i class="fa fa-calendar" /> Conference: May 2022
+              <i class="fa fa-calendar" /> Conference: 16th - 17th May 2022
             </h5>
             <h5 class="text-primary dark:text-primary-dark">
               <i class="fa fa-map-marker" /> Virtual, Africa
@@ -23,7 +23,7 @@
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
             <a class="btn-secondary">Buy Ticket</a>
-            <a class="btn-accent">Call For Speakers</a>
+            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
           </div>
         </div>
       </div>
@@ -58,7 +58,9 @@
         <div class="flex justify-center">
           <shared-title>Sponsor ElixirConfAfr</shared-title>
         </div>
-        <p class="text-white text-center">Want to become a sponsor? Take a look at our <a class="text-primary dark:text-primary-dark" href="https://elixirconf.africa/ElixirConf%20Africa%20Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a></p>
+        <p class="text-white text-center">
+          Want to become a sponsor? Take a look at our <a class="text-primary dark:text-primary-dark" href="https://elixirconf.africa/ElixirConf%20Africa%20Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a>
+        </p>
         <div class="flex justify-center pt-3 md:pt-6">
           <a class="btn-accent" href="mailto:jambo@elixirconf.africa">Become A Sponsor</a>
         </div>
@@ -67,9 +69,3 @@
     <home-sponsors />
   </div>
 </template>
-
-<script>
-export default {
-  name: 'index',
-}
-</script>

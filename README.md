@@ -1,5 +1,7 @@
-# Nuxt 3 Minimal Starter
+# ElixirConfAfrica Web 2022
+> Official conference website
 
+> Nuxt 3 implementation
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 ## Setup
@@ -27,6 +29,8 @@ yarn build
 ```
 
 ## Building Components
+
+UI inspiration from this [https://demo.themewinter.com/wp/exhibz/home-9](https://demo.themewinter.com/wp/exhibz/home-9/) 
 
 All components sit in `/components` directory. check on [nuxt 3](https://v3.nuxtjs.org/)
 

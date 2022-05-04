@@ -12,11 +12,11 @@
             <span class="text-xs text-light-text dark:text-light-text-dark">HOURS</span>
           </div>
           <div class="w-full px-1 md:px-6">
-            <p>{{ props.minutes }}</p>
+            <p>{{ props.minutes < 10 ? '0' + props.minutes : props.minutes }}</p>
             <span class="text-xs text-light-text dark:text-light-text-dark">MINUTES</span>
           </div>
           <div class="w-full px-1 md:px-6">
-            <p>{{ props.seconds }}</p>
+            <p>{{ props.seconds < 10 ? '0' + props.seconds : props.seconds }}</p>
             <span class="text-xs text-light-text dark:text-light-text-dark">SECONDS</span>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default {
   components: { VueCountdown },
   data () {
     const now = new Date()
-    const d = new Date('2022-05-08')
+    const d = new Date('2022-08-16')
 
     return {
       time: d - now,
