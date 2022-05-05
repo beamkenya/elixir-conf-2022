@@ -108,7 +108,7 @@ const members = [
   },
   {
     name: 'Magak Emmanuel',
-    photo: '/images/organisers/IMG_20200207_123840 - Magak Emmanuel.jpg',
+    photo: '/images/organisers/MagakEmmanuel.jpg',
     link: 'https://www.linkedin.com/in/manuelgeek',
     tagline: 'Creative Director',
   },
