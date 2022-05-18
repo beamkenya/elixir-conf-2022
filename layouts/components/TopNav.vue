@@ -21,7 +21,7 @@
 
     <div
       id="nav-content"
-      :class="['w-full flex-grow lg:flex w-full lg:items-center lg:w-auto lg:block pt-6 lg:pt-0', navVisible ? '' : 'hidden']"
+      :class="['w-full flex-grow lg:flex w-full lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? '' : 'hidden']"
     >
       <div class="w-full ld:w-8/12">
         <ul :class="['list-reset flex-1 lg:flex justify-start lg:justify-center items-center', defaultLayout ? 'text-primary dark:text-primary-dark' : 'text-white']">
@@ -30,18 +30,18 @@
               <i class="fa fa-home" /> Home
             </router-link>
           </li>
-          <!--          <li class="mr-3">-->
-          <!--            <router-link class="py-2 px-4 inline-block text-px-13 no-underline nav-link" to="/sessions">-->
-          <!--               Sessions-->
-          <!--            </router-link>-->
-          <!--          </li>-->
+          <li class="mr-3">
+            <router-link class="py-2 px-4 inline-block no-underline text-px-13 nav-link " to="/">
+              <i class="fa fa-list" /> Sessions
+            </router-link>
+          </li>
           <li class="mr-3">
             <router-link class="py-2 px-4 inline-block no-underline text-px-13 nav-link " to="/about">
               <i class="fa fa-info-circle" /> About
             </router-link>
           </li>
           <li class="mr-3">
-            <router-link class="inline-block no-underline  py-2 px-4 text-px-13 nav-link" to="/">
+            <router-link class="inline-block no-underline  py-2 px-4 text-px-13 nav-link" to="/sponsors">
               <i class="fa fa-credit-card" /> Sponsors
             </router-link>
           </li>
@@ -75,6 +75,13 @@ export default {
     }
 
     return { toggleNav, navVisible }
+  },
+  watch: {
+    $route () {
+      if (this.navVisible) {
+        this.toggleNav()
+      }
+    },
   },
 }
 </script>

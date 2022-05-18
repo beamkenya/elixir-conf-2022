@@ -1,5 +1,5 @@
 <template>
-  <label class="swap swap-rotate cursor-pointer text-primary absolute top-0 right-0 mt-3 lg:mt-5 mr-16 md:mr-12 lg:mr-4">
+  <label class="swap swap-rotate cursor-pointer text-primary absolute top-0 right-0 mt-6 lg:mt-5 mr-16 md:mr-12 lg:mr-4">
 
     <!-- this hidden checkbox controls the state -->
     <input type="checkbox" @click="toggleTheme">

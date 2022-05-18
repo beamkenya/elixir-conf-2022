@@ -6,7 +6,7 @@
         <shared-title>Elixir Conf Africa</shared-title>
       </div>
       <div class="py-4 lg:py-10">
-        <p>
+        <p class="md:px-32 px-0">
           ElixirConfAfr is an annual conference bringing together BEAM enthusiasts for collaboration, networking and learning.
           <br><br>
           Elixir communities around Africa bring you the first of many editions of ElixirConfAfr.
@@ -21,8 +21,8 @@
         <div class="mt-2 flex justify-center">
           <shared-title>Organizing Team</shared-title>
         </div>
-        <div class="w-full px-0 md:px-24 mr-auto mb-4 md:mb-0 pb-10 lg:pb-16 mt-5 lg:mt-12">
-          <div class="w-full flex flex-wrap grid sm:grid-cols-4 md:grid-cols-5 grid-cols-3 gap-2 lg:gap-8 mb-14 md:mb-0">
+        <div class="w-full px-0 md:px-24 mr-auto mb-4 md:mb-0 pb-8 lg:pb-16 mt-5 lg:mt-12">
+          <div class="w-full flex flex-wrap grid sm:grid-cols-4 md:grid-cols-5 grid-cols-3 gap-2 lg:gap-8 mb-5 md:mb-0">
             <a v-for="(member, $index) in members" :key="$index" :href="member.link" class="text-center flex justify-center flex-wrap" target="_blank">
               <div class="w-24 h-24 md:w-36 md:h-36 p-2 md:p-4 flex justify-center bg-secondary dark:bg-secondary-dark rounded">
                 <img

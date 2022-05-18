@@ -3,7 +3,7 @@
     <section id="why-attend" class="d-container py-3 md:py-6">
       <div class="row py-4 md:py-10 items-center">
         <div class="w-full md:w-1/2 flex flex-col justify-center md:justify-start">
-          <shared-title>ElixirConfAfr Partners </shared-title>
+          <shared-title :underlined="false">ElixirConfAfr Partners </shared-title>
           <p>Who make it happen</p>
         </div>
         <div class="flex flex-row justify-center md:justify-start items-center">

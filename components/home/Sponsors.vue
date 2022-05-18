@@ -28,7 +28,7 @@
           <a v-for="(p, i) in communitiy" :key="i" :href="p.link" target="_blank" rel="noopener noreferrer"><img :src="p.logo" :alt="p.link" class="w-24 md:w-52 space-x-4 px-0 md:px-6 py-6 md:py-0"></a>
         </div>
       </div>
-      <div class="flex justify-center pt-6 md:pt-12">
+      <div class="flex justify-center pt-6 md:pt-12 mb-5 md:mb-0">
         <a class="btn-accent" href="mailto:jambo@elixirconf.africa">Become A Sponsor</a>
       </div>
     </section>
