@@ -11,31 +11,43 @@
               </h4>
             </div>
             <client-only v-if="!pending">
-              <carousel :per-page="1" :loop="true" :autoplay="true" :autoplay-timeout="10000" :autoplay-hover-pause="true">
+              <carousel
+                :per-page="1"
+                :nav="false"
+                wrap-around
+                pause-autoplay-on-hover
+                :loop="true"
+                :pagination-enabled="true"
+                :transition="500"
+                :autoplay="3000"
+                :mouse-drag="false"
+              >
                 <slide v-for="(speaker, $index) in session.speakers" :key="$index" class="w-full">
-                  <div class="w-full flex items-start flex text-center">
-                    <div class="w-24 h-24 md:w-32 md:h-32 p-2 md:p-3 flex-none bg-secondary dark:bg-secondary-dark rounded">
-                      <img class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark" :src="speaker.avatar" :alt="speaker.name">
+                  <div class="flex flex-col text-left">
+                    <div class="w-full flex items-start flex">
+                      <div class="w-24 h-24 md:w-32 md:h-32 p-2 md:p-3 flex-none bg-secondary dark:bg-secondary-dark rounded">
+                        <img class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark" :src="speaker.avatar" :alt="speaker.name">
+                      </div>
+                      <div class="w-full text-left px-2 py-1 lg:py-4">
+                        <p class="text-base">
+                          {{ speaker.name }}
+                        </p>
+                        <p class="text-sm text-dark-text dark:text-dark-text-dark">
+                          {{ speaker.tagline }}
+                        </p>
+                        <p class="text-px-13 pt-1">
+                          <a :href="speaker.twitter" target="_blank"><i class="fa fa-twitter" /> {{ speaker.name }}</a>
+                        </p>
+                      </div>
                     </div>
-                    <div class="w-full text-left px-2 py-1 lg:py-4">
-                      <p class="text-base">
-                        {{ speaker.name }}
-                      </p>
-                      <p class="text-sm text-dark-text dark:text-dark-text-dark">
-                        {{ speaker.tagline }}
-                      </p>
-                      <p class="text-px-13 pt-1">
-                        <a :href="speaker.twitter" target="_blank"><i class="fa fa-twitter" /> {{ speaker.name }}</a>
+                    <div class="w-full">
+                      <h4 v-if="speaker.biography !== null" class="text-primary dark:text-primary-dark text-base mt-2 md:mt-4">
+                        Bio:
+                      </h4>
+                      <p class="text-dark-text dark:text-dark-text-dark text-sm mt-2 md:mt-4 mb-4 lg:mb-16">
+                        {{ speaker.biography }}
                       </p>
                     </div>
-                  </div>
-                  <div class="w-full">
-                    <h4 v-if="speaker.biography !== null" class="text-primary dark:text-primary-dark text-base mt-2 md:mt-4">
-                      Bio:
-                    </h4>
-                    <p class="text-dark-text dark:text-dark-text-dark text-sm mt-2 md:mt-4 mb-4 lg:mb-16">
-                      {{ speaker.biography }}
-                    </p>
                   </div>
                 </slide>
               </carousel>
@@ -74,30 +86,30 @@
 
               <div v-if="!session.is_serviceSession" class="w-full justify-center md:justify-start flex flex-col mt-4 md:mt-10 mb-4 lg:mb-16">
                 <div class="w-full flex">
-<!--                  <a class="text-primary dark:text-primary-dark text-px-13-b black-persist mr-4 lg:mr-6" href="#" @click.prevent="share">share <i class="fa fa-share" /></a>-->
-<!--                  <button class="text-primary dark:text-primary-dark text-px-13-b white" @click="toggleModal">-->
-<!--                    Session Feedback <i class="fa fa-share" />-->
-<!--                  </button>-->
+                  <!--                  <a class="text-primary dark:text-primary-dark text-px-13-b black-persist mr-4 lg:mr-6" href="#" @click.prevent="share">share <i class="fa fa-share" /></a>-->
+                  <!--                  <button class="text-primary dark:text-primary-dark text-px-13-b white" @click="toggleModal">-->
+                  <!--                    Session Feedback <i class="fa fa-share" />-->
+                  <!--                  </button>-->
                 </div>
-<!--                <transition name="fade">-->
-<!--                  <div v-if="!webShare" class="w-full flex mt-4 justify-between border rounded-lg p-4 shadow" @click="webShare= true">-->
-<!--                    <ShareNetwork-->
-<!--                      v-for="network in networks"-->
-<!--                      :key="network.key"-->
-<!--                      :network="network.network"-->
-<!--                      class="text-px-14-slab cursor-pointer"-->
-<!--                      :url="sharing.url"-->
-<!--                      :title="session.title"-->
-<!--                      :description="$truncateString(session.description, 100)"-->
-<!--                      :quote="$truncateString(session.description, 100)"-->
-<!--                      :hashtags="sharing.hashtags"-->
-<!--                      :twitter-user="sharing.twitterUser"-->
-<!--                    >-->
-<!--                      <i :style="{color: network.color}" :class="network.icon" />-->
-<!--                      <span>{{ network.name }}</span>-->
-<!--                    </ShareNetwork>-->
-<!--                  </div>-->
-<!--                </transition>-->
+                <!--                <transition name="fade">-->
+                <!--                  <div v-if="!webShare" class="w-full flex mt-4 justify-between border rounded-lg p-4 shadow" @click="webShare= true">-->
+                <!--                    <ShareNetwork-->
+                <!--                      v-for="network in networks"-->
+                <!--                      :key="network.key"-->
+                <!--                      :network="network.network"-->
+                <!--                      class="text-px-14-slab cursor-pointer"-->
+                <!--                      :url="sharing.url"-->
+                <!--                      :title="session.title"-->
+                <!--                      :description="$truncateString(session.description, 100)"-->
+                <!--                      :quote="$truncateString(session.description, 100)"-->
+                <!--                      :hashtags="sharing.hashtags"-->
+                <!--                      :twitter-user="sharing.twitterUser"-->
+                <!--                    >-->
+                <!--                      <i :style="{color: network.color}" :class="network.icon" />-->
+                <!--                      <span>{{ network.name }}</span>-->
+                <!--                    </ShareNetwork>-->
+                <!--                  </div>-->
+                <!--                </transition>-->
               </div>
             </div>
             <session-skeleton v-else />
@@ -130,7 +142,7 @@ const config = useRuntimeConfig()
 //   { network: 'twitter', name: 'Twitter', icon: 'fa fa-twitter', color: '#1da1f2' },
 //   { network: 'whatsapp', name: 'Whatsapp', icon: 'fa fa-whatsapp', color: '#25d366' },
 // ]
-const webShare = ref(true)
+// const webShare = ref(true)
 
 let sessions = []
 for (const key in data.data) {
@@ -140,22 +152,22 @@ for (const key in data.data) {
 
 const session = sessions.find(s => s.slug === route.params.slug)
 
-const { $truncateString } = useNuxtApp()
+// const { $truncateString } = useNuxtApp()
 
-const share = () => {
-  if (navigator.share) {
-    navigator.share({
-      title: session.title,
-      text: $truncateString(session.description, 100),
-      url: config.BASE_URL + route.fullPath,
-    })
-      .then(() => console.log('Successful share'))
-      .catch(error => console.log('Error sharing', error))
-  } else {
-    webShare.value = false
-    console.log('not supported')
-  }
-}
+// const share = () => {
+//   if (navigator.share) {
+//     navigator.share({
+//       title: session.title,
+//       text: $truncateString(session.description, 100),
+//       url: config.BASE_URL + route.fullPath,
+//     })
+//       .then(() => console.log('Successful share'))
+//       .catch(error => console.log('Error sharing', error))
+//   } else {
+//     webShare.value = false
+//     console.log('not supported')
+//   }
+// }
 
 onMounted(() => {
   setTimeout(() => {
