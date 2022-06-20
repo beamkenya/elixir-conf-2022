@@ -8,7 +8,7 @@
       </div>
       <div class="w-full">
         <p class="text-center">
-          <a class="text-xs text-white" href="https://github.com/beamkenya/elixirconfafrica_code_of_conduct/blob/main/README.md" target="_blank" rel="noopener noreferrer">Code of Conduct</a>
+          <a class="text-xs text-white underline" href="https://github.com/beamkenya/elixirconfafrica_code_of_conduct/blob/main/README.md" target="_blank" rel="noopener noreferrer">Code of Conduct</a>
         </p>
         <p class="text-center text-white text-xs mt-1">
           Made with <i class="fa-heart fa" style="color:#ec645e;" />  by Elixir Communities in Africa

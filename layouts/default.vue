@@ -23,6 +23,12 @@ watchEffect(() => {
   defaultLayout.value = route.name === 'index'
 })
 
+const nuxtApp = useNuxtApp()
+
+nuxtApp.hook('page:finish', () => {
+  window.scrollTo(0, 0)
+})
+
 </script>
 
 <style>

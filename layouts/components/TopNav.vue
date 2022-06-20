@@ -31,7 +31,7 @@
             </router-link>
           </li>
           <li class="mr-3">
-            <router-link class="py-2 px-4 inline-block no-underline text-px-13 nav-link " to="/">
+            <router-link class="py-2 px-4 inline-block no-underline text-px-13 nav-link " to="/sessions">
               <i class="fa fa-list" /> Sessions
             </router-link>
           </li>
