@@ -8,19 +8,19 @@
         <div class="w-full md:w-1/3">
           <div class="flex flex-col text-left md:text-right">
             <i class="fa fa-microphone text-6xl" />
-            <h5 class="text-white text-2xl py-2 md:py-4">
+            <h5 class="dark-text text-2xl py-2 md:py-4">
               Great Speakers
             </h5>
-            <p class="text-white">
+            <p class="dark-text">
               How you transform your business as technology, consumer, habits industry dynamic
             </p>
           </div>
           <div class="flex flex-col text-left md:text-right mt-5 md:mt-12">
             <i class="fa fa-rss text-6xl" />
-            <h5 class="text-white text-2xl py-2 md:py-4">
+            <h5 class="dark-text text-2xl py-2 md:py-4">
               Networking
             </h5>
-            <p class="text-white">
+            <p class="text-white dark:text-secondary-dark-text">
               How you transform your business as technology, consumer, habits industry dynamic
             </p>
           </div>
@@ -38,19 +38,19 @@
         <div class="w-full md:w-1/3">
           <div class="flex flex-col text-left">
             <i class="fa fa-group text-6xl" />
-            <h5 class="text-white text-2xl py-2 md:py-4">
+            <h5 class="text-white dark:text-secondary-dark-text text-2xl py-2 md:py-4">
               New People
             </h5>
-            <p class="text-white">
+            <p class="text-white dark:text-secondary-dark-text">
               How you transform your business as technology, consumer, habits industry dynamic
             </p>
           </div>
           <div class="flex flex-col text-left mt-5 md:mt-12">
             <i class="fa fa-puzzle-piece text-6xl" />
-            <h5 class="text-white text-2xl py-2 md:py-4">
+            <h5 class="text-white dark:text-secondary-dark-text text-2xl py-2 md:py-4">
               Have Fun
             </h5>
-            <p class="text-white">
+            <p class="text-white dark:text-secondary-dark-text">
               How you transform your business as technology, consumer, habits industry dynamic
             </p>
           </div>

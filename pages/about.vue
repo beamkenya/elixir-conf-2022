@@ -9,11 +9,17 @@
         <p class="md:px-32 px-0">
           ElixirConfAfr is an annual conference bringing together BEAM enthusiasts for collaboration, networking and learning.
           <br><br>
-          Elixir communities around Africa bring you the first of many editions of ElixirConfAfr.
-          This conference will be held virtually and is open to anyone from anywhere around the world, the event will incorporate among other things, technical and non technical talks, with the main focus being how Elixir has been used to craft technological solutions aimed at addressing problems and issues within and outside of Africa.
+<!--          Elixir communities around Africa bring you the first of many editions of ElixirConfAfr.-->
+<!--          This conference will be held virtually and is open to anyone from anywhere around the world, the event will incorporate among other things, technical and non technical talks, with the main focus being how Elixir has been used to craft technological solutions aimed at addressing problems and issues within and outside of Africa.-->
 
-          <br><br>
-          ElixConfAfr will be held at Greenwich Meridian Time (GMT) to suit attendees all over Africa for a two-day event filled with display of talks and workshops from amazing speakers and teachers.
+<!--          <br><br>-->
+<!--          ElixConfAfr will be held at Greenwich Meridian Time (GMT) to suit attendees all over Africa for a two-day event filled with display of talks and workshops from amazing speakers and teachers.-->
+
+          From the creators of the first ever Elixir Conference that took place in May 2021, we feel indebted and excited to bring you yet another stupendous ElixirConf virtual experience.
+          <br> Ever since their inception, BEAM languages have grown tremendously, we've all in a way witnessed this growth, kind of like parenting :) So, as Elixir/Erlang die hards we are excited to show off the amazing progress the language as made over the years.
+          <br> We've all (or know someone who has) built amazing products and services running on this  language that has a therapeutic effect, and these have gone a long way to provide solutions to various problems we may know about.
+          <br><br>So, this year, as we bring light to the various technologies and trends hooked to Elixir, we'd also like to showcase real life exemplar of how the language has been used effectively as a solution power tool. That's what ElixirConf Africa is about this year.
+          <br><br> Gear up for the amazing roller coaster of amazing talks, game-time sessions, code and coffee booths and above all NETWORKING! Cheers!
         </p>
       </div>
 

@@ -17,7 +17,11 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
   ],
+  modules: [
+    // 'vue-social-sharing/nuxt',
+  ],
   build: {
+    // transpile: ['moment'],
     postcss: {
       postcssOptions: {
         plugins: {
@@ -26,5 +30,8 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  publicRuntimeConfig: {
+    BASE_URL: process.env.BASE_URL || 'https://nuxtjs.org',
   },
 })
