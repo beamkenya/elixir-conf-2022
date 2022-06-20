@@ -22,32 +22,32 @@
         <div class="w-full flex flex-wrap mt-10 mb-14 mt-5 md:mt-10 md:mb-0 justify-center">
           <div class="w-full flex justify-center grid grid-cols-3">
             <div class="justify-center flex items-center px-3 py-5 text-center bg-primary dark:bg-primary-dark">
-              <p class="text-sm md:text-base uppercase text-white">
+              <p class="text-sm md:text-base uppercase text-white dark:text-secondary-dark-text">
                 Brand awareness
               </p>
             </div>
             <div class="justify-center flex items-center px-3 py-5 text-center bg-accent dark:bg-accent-dark">
-              <p class="text-sm md:text-base uppercase text-white">
+              <p class="text-sm md:text-base uppercase text-white dark:text-secondary-dark-text">
                 User adoption
               </p>
             </div>
             <div class="justify-center flex items-center px-3 py-5 text-center bg-secondary dark:bg-secondary-dark">
-              <p class="text-sm md:text-base uppercase text-white">
+              <p class="text-sm md:text-base uppercase text-white dark:text-secondary-dark-text">
                 Build relationships
               </p>
             </div>
             <div class="justify-center flex items-center px-3 py-5 text-center bg-secondary dark:bg-secondary-dark">
-              <p class="text-sm md:text-base uppercase text-white">
+              <p class="text-sm md:text-base uppercase text-white dark:text-secondary-dark-text">
                 User insights
               </p>
             </div>
             <div class="justify-center flex items-center px-3 py-5 text-center bg-primary dark:bg-primary-dark">
-              <p class="text-sm md:text-base uppercase text-white">
+              <p class="text-sm md:text-base uppercase text-white dark:text-secondary-dark-text">
                 Find ambassadors
               </p>
             </div>
             <div class="justify-center flex items-center px-3 py-5 text-center bg-accent dark:bg-accent-dark">
-              <p class="text-sm md:text-base uppercase text-white">
+              <p class="text-sm md:text-base uppercase text-white dark:text-secondary-dark-text">
                 Lead generation
               </p>
             </div>
@@ -62,7 +62,7 @@
             <shared-title :underlined="false">
               Sponsor ElixirConfAfr
             </shared-title>
-            <p class="text-white">
+            <p class="text-white dark:text-secondary-dark-text">
               Promote, engage, sell, hire etc. Take a look at our <a class="text-primary dark:text-primary-dark" href="/docs/ElixirConf_Africa_Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a>
             </p>
           </div>

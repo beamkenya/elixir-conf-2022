@@ -13,7 +13,7 @@
         class="modal-container bg-white w-11/12 md:w-6/12 mx-auto rounded shadow-lg z-50 overflow-y-auto"
       >
         <!--        <div-->
-        <!--          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"-->
+        <!--          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white dark:text-secondary-dark-text text-sm z-50"-->
         <!--        >-->
         <!--          &lt;!&ndash;          X&ndash;&gt;-->
         <!--        </div>-->

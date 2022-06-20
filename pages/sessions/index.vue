@@ -6,8 +6,8 @@
         <div v-if="!pending" class="w-full container mx-auto flex flex-wrap px-4 md:px-12 py-4">
           <div class="flex flex-row lg:flex-col w-full lg:w-1/12 h-auto lg:h-64 bor border-r-0 lg:border-r border-primary dark:border-primary-dark space-y-0 lg:space-y-6 space-x-6 lg:space-x-0 items-center lg:items-start justify-center lg:justify-start py-2 lg:py-0 sticky nav-bg nav-side z-30">
             <div v-for="(days, $index, $key) in schedule" :key="$key" :class="['w-4/12 px-3 py-1 lg:w-full cursor-pointer rounded-tl-lg rounded-bl-lg rounded-r-lg lg:rounded-r-none', currentTab === $key ? 'bg-primary dark:bg-primary-dark' : 'border border-r-1 lg:border-r-0 border-primary dark:border-primary-dark' ]" @click.prevent="showTab($key)">
-              <h4 :class="['text-px-16-slab', currentTab === $key ? 'text-white' : 'text-primary dark:text-primary-dark']">
-                {{ $timeDay($index) }} <small :class="['text-px-13 capitalize', currentTab === $key ? 'text-white' : 'text-primary dark:text-primary-dark']">Day {{ $key+1 }}</small>
+              <h4 :class="['text-px-16-slab', currentTab === $key ? 'text-white dark:text-secondary-dark-text' : 'text-primary dark:text-primary-dark']">
+                {{ $timeDay($index) }} <small :class="['text-px-13 capitalize', currentTab === $key ? 'text-white dark:text-secondary-dark-text' : 'text-primary dark:text-primary-dark']">Day {{ $key+1 }}</small>
               </h4>
             </div>
           </div>

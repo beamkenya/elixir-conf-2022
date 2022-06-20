@@ -14,7 +14,7 @@
               <carousel :per-page="1" :loop="true" :autoplay="true" :autoplay-timeout="10000" :autoplay-hover-pause="true">
                 <slide v-for="(speaker, $index) in session.speakers" :key="$index" class="w-full">
                   <div class="w-full flex items-start flex text-center">
-                    <div class="w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 flex-none bg-secondary dark:bg-secondary-dark rounded">
+                    <div class="w-24 h-24 md:w-32 md:h-32 p-2 md:p-3 flex-none bg-secondary dark:bg-secondary-dark rounded">
                       <img class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark" :src="speaker.avatar" :alt="speaker.name">
                     </div>
                     <div class="w-full text-left px-2 py-1 lg:py-4">
@@ -74,30 +74,30 @@
 
               <div v-if="!session.is_serviceSession" class="w-full justify-center md:justify-start flex flex-col mt-4 md:mt-10 mb-4 lg:mb-16">
                 <div class="w-full flex">
-                  <a class="text-primary dark:text-primary-dark text-px-13-b black-persist mr-4 lg:mr-6" href="#" @click.prevent="share">share <i class="fa fa-share" /></a>
+<!--                  <a class="text-primary dark:text-primary-dark text-px-13-b black-persist mr-4 lg:mr-6" href="#" @click.prevent="share">share <i class="fa fa-share" /></a>-->
 <!--                  <button class="text-primary dark:text-primary-dark text-px-13-b white" @click="toggleModal">-->
 <!--                    Session Feedback <i class="fa fa-share" />-->
 <!--                  </button>-->
                 </div>
-                <transition name="fade">
-                  <div v-if="!webShare" class="w-full flex mt-4 justify-between border rounded-lg p-4 shadow" @click="webShare= true">
-                    <ShareNetwork
-                      v-for="network in networks"
-                      :key="network.key"
-                      :network="network.network"
-                      class="text-px-14-slab cursor-pointer"
-                      :url="sharing.url"
-                      :title="session.title"
-                      :description="$truncateString(session.description, 100)"
-                      :quote="$truncateString(session.description, 100)"
-                      :hashtags="sharing.hashtags"
-                      :twitter-user="sharing.twitterUser"
-                    >
-                      <i :style="{color: network.color}" :class="network.icon" />
-                      <span>{{ network.name }}</span>
-                    </ShareNetwork>
-                  </div>
-                </transition>
+<!--                <transition name="fade">-->
+<!--                  <div v-if="!webShare" class="w-full flex mt-4 justify-between border rounded-lg p-4 shadow" @click="webShare= true">-->
+<!--                    <ShareNetwork-->
+<!--                      v-for="network in networks"-->
+<!--                      :key="network.key"-->
+<!--                      :network="network.network"-->
+<!--                      class="text-px-14-slab cursor-pointer"-->
+<!--                      :url="sharing.url"-->
+<!--                      :title="session.title"-->
+<!--                      :description="$truncateString(session.description, 100)"-->
+<!--                      :quote="$truncateString(session.description, 100)"-->
+<!--                      :hashtags="sharing.hashtags"-->
+<!--                      :twitter-user="sharing.twitterUser"-->
+<!--                    >-->
+<!--                      <i :style="{color: network.color}" :class="network.icon" />-->
+<!--                      <span>{{ network.name }}</span>-->
+<!--                    </ShareNetwork>-->
+<!--                  </div>-->
+<!--                </transition>-->
               </div>
             </div>
             <session-skeleton v-else />
@@ -118,18 +118,18 @@ const pending = ref(true)
 const route = useRoute()
 const config = useRuntimeConfig()
 
-const sharing = {
-  url: config.BASE_URL + route.fullPath,
-  hashtags: 'elixirconf,elixirconfafrica',
-  twitterUser: 'elixirconfafrica',
-}
+// const sharing = {
+//   url: config.BASE_URL + route.fullPath,
+//   hashtags: 'elixirconf,elixirconfafrica',
+//   twitterUser: 'elixirconfafrica',
+// }
 
-const networks = [
-  { network: 'linkedin', name: 'LinkedIn', icon: 'fa fa-linkedin', color: '#007bb5' },
-  { network: 'telegram', name: 'Telegram', icon: 'fa fa-telegram', color: '#0088cc' },
-  { network: 'twitter', name: 'Twitter', icon: 'fa fa-twitter', color: '#1da1f2' },
-  { network: 'whatsapp', name: 'Whatsapp', icon: 'fa fa-whatsapp', color: '#25d366' },
-]
+// const networks = [
+//   { network: 'linkedin', name: 'LinkedIn', icon: 'fa fa-linkedin', color: '#007bb5' },
+//   { network: 'telegram', name: 'Telegram', icon: 'fa fa-telegram', color: '#0088cc' },
+//   { network: 'twitter', name: 'Twitter', icon: 'fa fa-twitter', color: '#1da1f2' },
+//   { network: 'whatsapp', name: 'Whatsapp', icon: 'fa fa-whatsapp', color: '#25d366' },
+// ]
 const webShare = ref(true)
 
 let sessions = []
@@ -163,19 +163,19 @@ onMounted(() => {
   }, 100)
 })
 
-// useMeta({
-//   title: this.session.title,
-//   meta: [
-//     { hid: 'description', name: 'description', content: this.$truncateString(this.session.description, 100) },
-//     { hid: 'og:description', name: 'description', content: this.$truncateString(this.session.description, 100) },
-//     { hid: 'og:url', property: 'og:url', content: process.env.BASE_URL + this.$route.fullPath },
-//     { hid: 'twitter:url', name: 'twitter:url', content: process.env.BASE_URL + this.$route.fullPath },
-//     { hid: 'og:title', property: 'og:title', content: this.session.title },
-//     { hid: 'twitter:title', name: 'twitter:title', content: this.session.title },
-//     { hid: 'og:image', property: 'og:image', content: this.session.session_image !== null ? this.session.session_image : '/images/logo-purple.png' },
-//     { hid: 'twitter:image', name: 'twitter:image', content: this.session.session_image !== null ? this.session.session_image : '/images/logo-purple.png' },
-//   ],
-// })
+useMeta({
+  title: session.title,
+  meta: [
+    { hid: 'description', name: 'description', content: session.description.slice(0, 100) + '...' },
+    { hid: 'og:description', name: 'description', content: session.description.slice(0, 100) + '...' },
+    { hid: 'og:url', property: 'og:url', content: config.BASE_URL + route.fullPath },
+    { hid: 'twitter:url', name: 'twitter:url', content: config.BASE_URL + route.fullPath },
+    { hid: 'og:title', property: 'og:title', content: session.title },
+    { hid: 'twitter:title', name: 'twitter:title', content: session.title },
+    { hid: 'og:image', property: 'og:image', content: session.session_image !== null ? session.session_image : '/images/logo-purple.png' },
+    { hid: 'twitter:image', name: 'twitter:image', content: session.session_image !== null ? session.session_image : '/images/logo-purple.png' },
+  ],
+})
 </script>
 
 <style scoped>

@@ -2,7 +2,7 @@
   <div>
     <div class="w-full flex items-start flex text-center">
       <div class="w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 flex-none bg-green-c-2 rounded">
-        <img class="w-full p-0 rounded-full border-2 border-green-500" src="https://via.placeholder.com/150/E2E8F0?text=droidconKe" alt="Sunset in the mountains">
+        <img class="w-full p-0 rounded-full border-2 border-primary" src="https://via.placeholder.com/150/E2E8F0?text=elixirConfAfrica" alt="Sunset in the mountains">
       </div>
       <div class="w-full text-left px-2 py-1 lg:py-4">
         <div class="text-px-13-slab-b h-3 w-32 bg-gray-200 skeleton" />

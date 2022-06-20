@@ -22,7 +22,7 @@
           </div>
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
-            <a class="btn-secondary">Buy Ticket</a>
+            <a href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noopener noreferrer" class="btn-secondary">Buy Ticket</a>
             <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
           </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="flex justify-center">
           <shared-title>Sponsor ElixirConfAfr</shared-title>
         </div>
-        <p class="text-white text-center">
+        <p class="text-white dark:text-secondary-dark-text text-center">
           Want to become a sponsor? Take a look at our <a class="text-primary dark:text-primary-dark" href="/docs/ElixirConf_Africa_Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a>
         </p>
         <div class="flex justify-center pt-3 md:pt-6">
