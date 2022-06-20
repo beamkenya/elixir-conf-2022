@@ -38,18 +38,16 @@
                           <div v-else>
                             <client-only>
                               <carousel
-                                :items-to-show="1"
-                                :transition="1000"
-                                :items-to-scroll="1"
+                                :per-page="1"
+                                :nav="false"
+                                wrap-around
+                                pause-autoplay-on-hover
+                                :loop="true"
+                                :pagination-enabled="true"
+                                :transition="500"
+                                :autoplay="2000"
+                                :mouse-drag="false"
                               >
-                                <!--                              :per-page="1"-->
-                                <!--                              :autoplay="true"-->
-                                <!--                              :nav="false"-->
-                                <!--                              :loop="true"-->
-                                <!--                              :pagination-enabled="true"-->
-                                <!--                              :autoplay-timeout="2000"-->
-                                <!--                              :mouse-drag="false"-->
-                                <!--                            >-->
                                 <slide v-for="(speaker, $i) in session.speakers" :key="$i">
                                   <img :src="speaker.avatar" :alt="speaker.name" :title="speaker.name">
                                 </slide>
