@@ -3,10 +3,10 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
-  target: 'static',
-  router: {
-    base: '/elixir-conf-2022/',
-  },
+  // target: 'static',
+  // router: {
+  //   base: '/elixir-conf-2022/',
+  // },
   meta: {
     meta: [
       // <meta name="viewport" content="width=device-width, initial-scale=1">
