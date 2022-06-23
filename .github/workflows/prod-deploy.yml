@@ -2,14 +2,14 @@ name: Build and Deploy to Live
 on:
   push:
     branches:
-      - dev
-#  release:
-#    types: [ published ]
+#      - dev
+  release:
+    types: [ published ]
 
 
 jobs:
   build-and-deploy:
-#    if: ${{ github.event.release.target_commitish == 'main' }}
+    if: ${{ github.event.release.target_commitish == 'main' }}
     runs-on: ubuntu-latest
 
     strategy:
