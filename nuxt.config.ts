@@ -4,9 +4,9 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: false,
   // target: 'static',
-  // router: {
-  //   base: '/elixir-conf-2022/',
-  // },
+  router: {
+    base: '/elixir-conf-2022',
+  },
   meta: {
     meta: [
       // <meta name="viewport" content="width=device-width, initial-scale=1">
