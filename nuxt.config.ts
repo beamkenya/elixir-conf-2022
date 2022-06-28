@@ -28,6 +28,7 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: '/nuxt/',
     baseURL: '/elixir-conf-2022/',
+    cdnURL: '/elixir-conf-2022/',
   },
   build: {
     // transpile: ['moment'],
