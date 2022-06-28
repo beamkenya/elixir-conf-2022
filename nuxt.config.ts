@@ -3,10 +3,10 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
-  // target: 'static',
-  vite: {
-    base: '/elixir-conf-2022/',
-  },
+  target: 'static',
+  // vite: {
+  //   base: '/elixir-conf-2022/',
+  // },
   meta: {
     meta: [
       // <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,7 @@ export default defineNuxtConfig({
   ],
   app: {
     buildAssetsDir: 'nuxt',
+    baseURL: '/elixir-conf-2022/',
   },
   build: {
     // transpile: ['moment'],
