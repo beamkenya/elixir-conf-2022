@@ -37,7 +37,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run generate
+          npm run build
 #          npm run build
 #          npm run generate
 #          touch .output/public/.nojekyll

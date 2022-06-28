@@ -2,8 +2,8 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  // ssr: false,
-  target: 'static',
+  ssr: false,
+  // target: 'static',
   // vite: {
   //   base: '/elixir-conf-2022/',
   // },
