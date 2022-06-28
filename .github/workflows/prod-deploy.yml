@@ -38,6 +38,10 @@ jobs:
         run: |
           npm install
           npm run build
+          cd .output/public
+          mkdir -p elixir-conf-2022/
+          cp -r docs/ elixir-conf-2022/docs/
+          cp -r images/ elixir-conf-2022/images/
 #          npm run build
 #          npm run generate
 #          touch .output/public/.nojekyll

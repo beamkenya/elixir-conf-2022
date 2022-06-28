@@ -2,11 +2,9 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  _nuxtConfigFiles: undefined,
   ssr: false,
   // target: 'static',
-  // vite: {
-  //   base: '/elixir-conf-2022/',
-  // },
   meta: {
     meta: [
       // <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,10 +26,17 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: '/nuxt/',
     baseURL: '/elixir-conf-2022/',
-    cdnURL: '/elixir-conf-2022/',
+    // cdnURL: 'http://0.0.0.0:3000/elixir-conf-2022/',
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
   build: {
     // transpile: ['moment'],
+    // publicPath: '/elixir-conf-2022/',
     postcss: {
       postcssOptions: {
         plugins: {
@@ -41,6 +46,14 @@ export default defineNuxtConfig({
       },
     },
   },
+  // hooks: {
+  //   build: {
+  //     done(builder) {
+  //       const publicDir = join(generator.nuxt.options.rootDir, 'public', '_nuxt')
+  //       copySync(join(generator.nuxt.options.generate.dir, '_nuxt'), publicDir)
+  //     }
+  //   }
+  // }
   // publicRuntimeConfig: {
   //   BASE_URL: process.env.BASE_URL || 'https://nuxtjs.org',
   // },
