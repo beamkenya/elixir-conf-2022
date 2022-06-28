@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     // 'vue-social-sharing/nuxt',
   ],
   app: {
-    buildAssetsDir: 'nuxt',
+    buildAssetsDir: '/nuxt/',
     baseURL: '/elixir-conf-2022/',
   },
   build: {
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  publicRuntimeConfig: {
-    BASE_URL: process.env.BASE_URL || 'https://nuxtjs.org',
-  },
+  // publicRuntimeConfig: {
+  //   BASE_URL: process.env.BASE_URL || 'https://nuxtjs.org',
+  // },
 })
