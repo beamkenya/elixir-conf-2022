@@ -4,8 +4,8 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: false,
   // target: 'static',
-  router: {
-    base: '/elixir-conf-2022',
+  vite: {
+    base: '/elixir-conf-2022/',
   },
   meta: {
     meta: [
