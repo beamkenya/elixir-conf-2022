@@ -25,6 +25,9 @@ export default defineNuxtConfig({
   modules: [
     // 'vue-social-sharing/nuxt',
   ],
+  app: {
+    buildAssetsDir: 'nuxt',
+  },
   build: {
     // transpile: ['moment'],
     postcss: {
