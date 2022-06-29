@@ -3,17 +3,17 @@
     <div class="d-container">
       <div class="flex items-center">
         <div class="w-full md:w-1/3">
-          <div>
-            <h5 class="text-secondary text-sm md:text-base dark:text-secondary-dark-text mt-12 md:mt-32">
+          <div class="mb-8 md:mb-0">
+            <h5 class="text-secondary text-sm md:text-base dark:text-secondary-dark-text mt-48 md:mt-32">
               #The Largest Elixir Conference in Africa
             </h5>
-            <h1 class="text-primary dark:text-primary-dark text-4xl md:text-7xl font-bold py-4 md:py-4">
+            <h1 class="text-primary dark:text-primary-dark text-4xl md:text-7xl font-bold py-4 md:py-4 -mt-2 md:mt-0">
               ElixirConfAfr <br> 2022
             </h1>
             <h3 class="pb-2 md:pb-4 title-2-secondary">
               Elixir as a power tool
             </h3>
-            <h5 class="text-primary dark:text-primary-dark">
+            <h5 class="text-primary dark:text-primary-dark mt-10 md:mt-0">
               <i class="fa fa-calendar" /> Conference: 11th - 12th Aug 2022
             </h5>
             <h5 class="text-primary dark:text-primary-dark">
