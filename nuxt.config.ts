@@ -2,7 +2,6 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  _nuxtConfigFiles: undefined,
   ssr: false,
   // target: 'static',
   meta: {
@@ -116,11 +115,11 @@ export default defineNuxtConfig({
   modules: [
     // 'vue-social-sharing/nuxt',
   ],
-  app: {
-    buildAssetsDir: '/nuxt/',
-    baseURL: '/elixir-conf-2022/',
-    // cdnURL: 'http://0.0.0.0:3000/elixir-conf-2022/',
-  },
+  // app: {
+  //   buildAssetsDir: '/nuxt/',
+  //   baseURL: '/elixir-conf-2022/',
+  //   // cdnURL: 'http://0.0.0.0:3000/elixir-conf-2022/',
+  // },
   postcss: {
     plugins: {
       tailwindcss: {},
