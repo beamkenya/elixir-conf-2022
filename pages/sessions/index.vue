@@ -23,7 +23,7 @@
                 leave-to-class="-translate-y-3 opacity-0"
               >
                 <div v-if="currentTab === $key" class="flex-wrap w-full flex space-y-6 mb-2 lg:mb-10">
-                  <div v-if="days.length > 0">
+                  <div v-if="days.length > 0 && config.isEventLive">
                     <div v-for="(session, $ind) in days" :key="$ind" class="flex w-full px-0 lg:px-2 mb-4 lg:mb-10">
                       <div :class="['w-2/12 flex items-center justify-center text-right hidden lg:grid', session.is_serviceSession ? 'h-24' : 'h-32']">
                         <h3 class="text-px-14-slab text-primary dark:text-primary-dark uppercase">
@@ -92,7 +92,7 @@
                       </div>
                     </div>
                   </div>
-                  <no-session v-else />
+                  <no-session :is-event-live="config.isEventLive" v-else />
                 </div>
               </Transition>
             </div>
@@ -105,10 +105,13 @@
 </template>
 
 <script setup>
+import { useRuntimeConfig } from 'nuxt/app'
 import data from '../../api/sessions.json'
 import SessionsSkeleton from '../../components/session/SessionsSkeleton'
 import NoSession from '../../components/session/NoSession'
 import 'vue3-carousel/dist/carousel.css'
+
+const config = useRuntimeConfig()
 
 const currentTab = ref(0)
 const pending = ref(true)
