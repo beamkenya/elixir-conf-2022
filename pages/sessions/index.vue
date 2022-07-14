@@ -11,7 +11,7 @@
               </h4>
             </div>
           </div>
-          <div class="w-full lg:w-11/12">
+          <div class="w-full lg:w-11/12 lg:min-h-[300px]">
             <div v-for="(days, $index, $key) in schedule" :id="$index" :key="$key">
               <Transition
                 name="fade"

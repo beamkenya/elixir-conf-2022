@@ -33,12 +33,12 @@ nuxtApp.hook('page:finish', () => {
 
 <style>
 .bg-background {
-  background: url(http://demo.themewinter.com/wp/exhibz/wp-content/uploads/2019/06/banner_img.png);
+  background: url(/images/banner_img.png);
   background-size: 50vw auto;
 }
 
 .bg-background-1 {
-  background: url(https://demo.themewinter.com/wp/exhibz/wp-content/uploads/2018/12/about-banner.jpg) 0% 0%;
+  background: url(/images/about-banner.jpeg) 0% 0%;
   background-size: 100% 350px;
 }
 @media screen and (max-width: 600px) {
