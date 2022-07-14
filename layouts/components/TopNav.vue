@@ -3,7 +3,7 @@
     <div class="d-container flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 text-white dark:text-secondary-dark-text mr-6">
         <router-link to="/">
-          <img class="w-60 -ml-4 px-2 md:px-0" :src="defaultLayout ? '/images/logo-purple.png' : '/images/logo-white.png'" alt="logo">
+          <img class="w-60 -ml-4 px-2 md:px-0" :src="defaultLayout || !changeColor ? '/images/logo-purple.png' : '/images/logo-white.png'" alt="logo">
         </router-link>
       </div>
 
@@ -18,14 +18,14 @@
           </svg>
         </button>
       </div>
-      <toggle-theme :default-layout="defaultLayout" />
+      <toggle-theme :default-layout="defaultLayout || !changeColor" />
 
       <div
           id="nav-content"
           :class="['w-full flex-grow lg:flex w-full lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'dark:bg-secondary-dark pb-2' : 'hidden']"
       >
         <div class="w-full ld:w-8/12">
-          <ul :class="['list-reset flex-1 lg:flex justify-start lg:justify-center items-center', defaultLayout ? 'text-primary dark:text-primary-dark' : 'text-white dark:text-secondary-dark-text']">
+          <ul :class="['list-reset flex-1 lg:flex justify-start lg:justify-center items-center', defaultLayout || !changeColor ? 'text-primary dark:text-primary-dark' : 'text-white dark:text-secondary-dark-text']">
             <li class="mr-3 black">
               <router-link class="inline-block py-2 px-4 text-px-13 no-underline black nav-link" to="/">
                 <i class="fa fa-home" /> Home
@@ -50,7 +50,7 @@
         </div>
 
         <div :class="['w-full lg:w-4/12 flex-grow flex justify-start lg:justify-end', navVisible ? 'px-2' : '']">
-          <a :class="defaultLayout ? 'btn-primary' : 'btn-secondary'" href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noreferrer noopener" disabled>Buy Ticket</a>
+          <a :class="defaultLayout || !changeColor ? 'btn-primary' : 'btn-secondary'" href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noreferrer noopener" disabled>Buy Ticket</a>
         </div>
       </div>
     </div>

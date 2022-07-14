@@ -16,7 +16,7 @@
                 The event targets students, professional software developers who work in mid to large sized organizations and who develop systems of all sizes for enterprise companies. The event aims to attract attendees across industries such as financial services, media houses, telco’s etc.
               </p>
             </div>
-            <img class="w-full md:w-2/3 p-0 md:px-4 my-10 md:0" src="https://droidcon.co.ke/images/NUMBERS.svg" alt="sponsorship">
+            <img class="w-full md:w-2/3 p-0 md:px-4 my-10 md:0" src="/images/NUMBERS.svg" alt="sponsorship">
           </div>
         </div>
         <div class="w-full flex flex-wrap mt-10 mb-14 mt-5 md:mt-10 md:mb-0 justify-center">
