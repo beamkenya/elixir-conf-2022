@@ -1,5 +1,8 @@
 <template>
   <div class="bg-white dark:bg-dark min-h-screen">
+    <Head>
+      <Title>The Largest Elixir Conference in Africa</Title>
+    </Head>
     <div :class="['min-h-screen bg-no-repeat w-full', bgClass]">
       <top-nav :default-layout="defaultLayout" />
       <slot />
