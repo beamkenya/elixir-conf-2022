@@ -4,6 +4,10 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: false,
   // target: 'static',
+  head: {
+    title: 'The Largest Elixir Conference in Africa',
+    // titleTemplate: 'ElixirConfAfric - %s',
+  },
   meta: {
     meta: [
       { charset: 'utf-8' },
@@ -20,8 +24,8 @@ export default defineNuxtConfig({
       { name: 'twitter:site', content: '@ElixirConfAfric' },
       { name: 'twitter:creator', content: '@ElixirConfAfric' },
       { property: 'og:site_name', content: 'ElixirConfAfric' },
-      { hid: 'og:image', property: 'og:image', content: '/assets/images/banner.png' },
-      { hid: 'twitter:image', name: 'twitter:image', content: '/assets/images/banner.png' },
+      { hid: 'og:image', property: 'og:image', content: 'https://elixirconf.africa/images/banner.png' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://elixirconf.africa/images/banner.png' },
       { hid: 'theme-color', name: 'theme-color', content: '#AD3989' },
       { name: 'canonical', content: 'https://elixirconf.africa' },
       {
@@ -30,7 +34,7 @@ export default defineNuxtConfig({
       },
       {
         name: 'msapplication-TileImage',
-        content: '/assets/images/icons/ms-icon-144x144.png',
+        content: '/images/icons/ms-icon-144x144.png',
       },
     ],
     link: [
@@ -41,71 +45,71 @@ export default defineNuxtConfig({
       {
         rel: 'apple-touch-icon',
         sizes: '57x57',
-        href: '/assets/images/icons/apple-icon-57x57.png',
+        href: '/images/icons/apple-icon-57x57.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '60x60',
-        href: '/assets/images/icons/apple-icon-60x60.png',
+        href: '/images/icons/apple-icon-60x60.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '72x72',
-        href: '/assets/images/icons/apple-icon-72x72.png',
+        href: '/images/icons/apple-icon-72x72.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '76x76',
-        href: '/assets/images/icons/apple-icon-76x76.png',
+        href: '/images/icons/apple-icon-76x76.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '114x114',
-        href: '/assets/images/icons/apple-icon-114x114.png',
+        href: '/images/icons/apple-icon-114x114.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '120x120',
-        href: '/assets/images/icons/apple-icon-120x120.png',
+        href: '/images/icons/apple-icon-120x120.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '144x144',
-        href: '/assets/images/icons/apple-icon-144x144.png',
+        href: '/images/icons/apple-icon-144x144.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '152x152',
-        href: '/assets/images/icons/apple-icon-152x152.png',
+        href: '/images/icons/apple-icon-152x152.png',
       },
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/assets/images/icons/apple-icon-180x180.png',
+        href: '/images/icons/apple-icon-180x180.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '192x192',
-        href: '/assets/images/icons/android-icon-192x192.png',
+        href: '/images/icons/android-icon-192x192.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/assets/images/icons/favicon-32x32.png',
+        href: '/images/icons/favicon-32x32.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '96x96',
-        href: '/assets/images/icons/favicon-96x96.png',
+        href: '/images/icons/favicon-96x96.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/assets/images/icons/favicon-16x16.png',
+        href: '/images/icons/favicon-16x16.png',
       },
     ],
   },
