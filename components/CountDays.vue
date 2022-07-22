@@ -32,7 +32,7 @@ export default {
   components: { VueCountdown },
   data () {
     const now = new Date()
-    const d = new Date('2022-08-11')
+    const d = new Date('2022-10-6')
 
     return {
       time: d - now,

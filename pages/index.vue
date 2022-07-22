@@ -14,7 +14,7 @@
               Elixir as a power tool
             </h3>
             <h5 class="text-primary dark:text-primary-dark mt-10 md:mt-0">
-              <i class="fa fa-calendar" /> Conference: 11th - 12th Aug 2022
+              <i class="fa fa-calendar" /> Conference: 6th - 7th Oct 2022
             </h5>
             <h5 class="text-primary dark:text-primary-dark">
               <i class="fa fa-map-marker" /> Virtual, Africa
