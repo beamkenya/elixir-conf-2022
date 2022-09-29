@@ -142,6 +142,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  nitro: {
+    prerender: {
+      routes: ['/404.html']
+    }
+  },
   // hooks: {
   //   build: {
   //     done(builder) {
