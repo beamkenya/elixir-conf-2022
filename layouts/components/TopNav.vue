@@ -9,9 +9,9 @@
 
       <div class="block lg:hidden">
         <button
-            id="nav-toggle"
-            :class="['flex items-center px-3 py-2 border rounded hover:text-primary hover:border-primary dark:hover:text-primary-dark dark:hover:border-primary-dark', defaultLayout ? 'text-primary dark:text-primary-dark border-primary dark:border-primary-dark' : 'text-white dark:text-secondary-dark-text border-white']"
-            @click="toggleNav()"
+          id="nav-toggle"
+          :class="['flex items-center px-3 py-2 border rounded hover:text-primary hover:border-primary dark:hover:text-primary-dark dark:hover:border-primary-dark', defaultLayout ? 'text-primary dark:text-primary-dark border-primary dark:border-primary-dark' : 'text-white dark:text-secondary-dark-text border-white']"
+          @click="toggleNav()"
         >
           <svg :class="[defaultLayout ? 'fill-current' : 'fill-white', 'h-3 w-3']" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -21,8 +21,8 @@
       <toggle-theme :default-layout="defaultLayout || !changeColor" />
 
       <div
-          id="nav-content"
-          :class="['w-full flex-grow lg:flex w-full lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'dark:bg-secondary-dark pb-2' : 'hidden']"
+        id="nav-content"
+        :class="['w-full flex-grow lg:flex w-full lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'dark:bg-secondary-dark pb-2' : 'hidden']"
       >
         <div class="w-full ld:w-8/12">
           <ul :class="['list-reset flex-1 lg:flex justify-start lg:justify-center items-center', defaultLayout || !changeColor ? 'text-primary dark:text-primary-dark' : 'text-white dark:text-secondary-dark-text']">
