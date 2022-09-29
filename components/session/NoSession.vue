@@ -6,7 +6,7 @@
         <div class="flex flex-wrap items-center">
           <div class="w-10/12 text-primary">
             <div v-if="isEventLive" class="text-px-14-slab black mb-2">
-              Seems there are no seesions here from the filter or saved session !
+              Seems there are no sessions here from the filter or saved session !
             </div>
             <div v-else class="text-px-14-slab black mb-2">
               Sessions and speakers list coming soon, stay tuned !
@@ -21,6 +21,7 @@
 <script>
 export default {
   name: 'NoSession',
+  // eslint-disable-next-line vue/require-prop-types
   props: ['isEventLive'],
 }
 </script>
