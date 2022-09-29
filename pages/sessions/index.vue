@@ -77,7 +77,7 @@
                               </div>
                               <div class="text-xs text-dark-text dark:text-dark-text-dark  uppercase mt-2">
                                 {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }}
-<!--                                | <span v-for="(room, $r) in session.rooms" :key="$r">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span> </span>-->
+                                <!--                                | <span v-for="(room, $r) in session.rooms" :key="$r">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span> </span>-->
                               </div>
                               <div v-if="!session.is_serviceSession" class="text-sm text-secondary dark:text-primary-dark pt-3">
                                 <i class="fa fa-user pr-1" /> <span v-for="(speaker, $s) in session.speakers" :key="$s"><a
@@ -93,7 +93,7 @@
                       </div>
                     </div>
                   </div>
-                  <no-session :is-event-live="config.isEventLive" v-else />
+                  <no-session v-else :is-event-live="config.isEventLive" />
                 </div>
               </Transition>
             </div>

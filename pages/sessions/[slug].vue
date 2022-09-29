@@ -59,9 +59,9 @@
               <h4 class="text-xl text-primary dark:text-primary-dark mr-0 md:mr-10">
                 Session
               </h4>
-<!--              <p v-if="!pending" class="text-base gray w-full">-->
-<!--                <span class="mr-2 ml-4 lg:ml-0">Level:</span> <span class="uppercase text-sm">#{{ session.session_level }}</span>-->
-<!--              </p>-->
+              <!--              <p v-if="!pending" class="text-base gray w-full">-->
+              <!--                <span class="mr-2 ml-4 lg:ml-0">Level:</span> <span class="uppercase text-sm">#{{ session.session_level }}</span>-->
+              <!--              </p>-->
             </div>
             <div v-if="!pending" class="w-full flex items-start flex-col">
               <div v-if="session.session_image !== null" class="rounded-lg">
@@ -75,7 +75,7 @@
               </p>
               <p class="text-sm text-dark-text dark:text-dark-text-dark uppercase mt-1">
                 {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }}
-<!--                | <span v-for="(room, $r) in session.rooms" :key="$r" class="green-dark">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span>  </span>-->
+                <!--                | <span v-for="(room, $r) in session.rooms" :key="$r" class="green-dark">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span>  </span>-->
               <!--              | <span :style="{ color: session.backgroundColor }">{{ session.session_format }}</span>-->
               </p>
               <h6 class="text-base font-bold text-primary dark:text-primary-dark mt-4 md:mt-10 w-full">
