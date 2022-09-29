@@ -153,7 +153,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL || 'https://nuxtjs.org',
-      isEventLive: false,
+      isEventLive: true,
     },
   },
 })
