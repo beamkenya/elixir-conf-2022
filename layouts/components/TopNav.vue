@@ -50,7 +50,7 @@
         </div>
 
         <div :class="['w-full lg:w-4/12 flex-grow flex justify-start lg:justify-end', navVisible ? 'px-2' : '']">
-          <a :class="defaultLayout || !changeColor ? 'btn-primary' : 'btn-secondary'" href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noreferrer noopener" disabled>Buy Ticket</a>
+          <a :class="defaultLayout || !changeColor ? 'btn-primary' : 'btn-secondary'" href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noreferrer noopener" disabled>Get Ticket</a>
         </div>
       </div>
     </div>
