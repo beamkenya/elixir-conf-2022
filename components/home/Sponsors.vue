@@ -13,22 +13,22 @@
             <a v-for="(p, i) in signature" :key="i" :href="p.link" target="_blank" rel="noopener noreferrer"><img :src="p.logo" :alt="p.link" class="w-36 md:w-72 space-x-4 px-0 md:px-6 py-6 md:py-0"></a>
           </div>
         </div>
-        <div class="row flex-col items-center mt-4 md:mt-8">
-          <h5 class="title-2-secondary py-3 md:py-5">
-            Conference Supporter
-          </h5>
-          <div class="flex flex-row justify-center md:justify-start items-center">
-            <a v-for="(p, i) in supporters" :key="i" :href="p.link" target="_blank" rel="noopener noreferrer"><img :src="p.logo" :alt="p.link" class="w-24 md:w-52 space-x-4 px-0 md:px-6 py-6 md:py-0"></a>
-          </div>
-        </div>
-        <div class="row flex-col items-center mt-4 md:mt-8">
-          <h5 class="title-2-secondary py-3 md:py-5">
-            Community Builder
-          </h5>
-          <div class="flex flex-row justify-center md:justify-start items-center">
-            <a v-for="(p, i) in communitiy" :key="i" :href="p.link" target="_blank" rel="noopener noreferrer"><img :src="p.logo" :alt="p.link" class="w-24 md:w-52 space-x-4 px-0 md:px-6 py-6 md:py-0"></a>
-          </div>
-        </div>
+<!--        <div class="row flex-col items-center mt-4 md:mt-8">-->
+<!--          <h5 class="title-2-secondary py-3 md:py-5">-->
+<!--            Conference Supporter-->
+<!--          </h5>-->
+<!--          <div class="flex flex-row justify-center md:justify-start items-center">-->
+<!--            <a v-for="(p, i) in supporters" :key="i" :href="p.link" target="_blank" rel="noopener noreferrer"><img :src="p.logo" :alt="p.link" class="w-24 md:w-52 space-x-4 px-0 md:px-6 py-6 md:py-0"></a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="row flex-col items-center mt-4 md:mt-8">-->
+<!--          <h5 class="title-2-secondary py-3 md:py-5">-->
+<!--            Community Builder-->
+<!--          </h5>-->
+<!--          <div class="flex flex-row justify-center md:justify-start items-center">-->
+<!--            <a v-for="(p, i) in communitiy" :key="i" :href="p.link" target="_blank" rel="noopener noreferrer"><img :src="p.logo" :alt="p.link" class="w-24 md:w-52 space-x-4 px-0 md:px-6 py-6 md:py-0"></a>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
       <div v-else class="text-center">
         <p class="font-medium">
@@ -52,7 +52,8 @@ export default {
     const config = useRuntimeConfig()
 
     const signature = [
-      { logo: '/images/sponsors/remote.svg', link: 'https://remote.com/' },
+      // { logo: '/images/sponsors/remote.svg', link: 'https://remote.com/' },
+      { logo: '/images/partners/podii.png', link: 'https://podiihq.com/' },
     ]
 
     const supporters = [
