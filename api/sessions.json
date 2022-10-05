@@ -135,8 +135,8 @@
         "is_bookmarked": false,
         "start_date_time": "2022-10-07 15:10:00",
         "start_time": "15:10:00",
-        "end_date_time": "2022-10-07 15:40:00",
-        "end_time": "15:40:00",
+        "end_date_time": "2022-10-07 15:20:00",
+        "end_time": "15:20:00",
         "speakers": [],
         "rooms": []
       },
@@ -153,10 +153,10 @@
         "is_serviceSession": false,
         "is_keynote": false,
         "is_bookmarked": false,
-        "start_date_time": "2022-10-07 15:45:00",
-        "start_time": "15:45:00",
-        "end_date_time": "2022-10-07 16:25:00",
-        "end_time": "16:25:00",
+        "start_date_time": "2022-10-07 15:20:00",
+        "start_time": "15:20:00",
+        "end_date_time": "2022-10-07 15:50:00",
+        "end_time": "15:50:00",
         "speakers": [
           {
             "name": "Rachael Mwatela",
@@ -186,6 +186,39 @@
         "rooms": []
       },
       {
+        "id": 26,
+        "title": "Chat Bots as User Interface",
+        "description": "A look at how you can bring your functionality very close to the user without building your own native app and how you can get your practice with Elixir in ways that are useful to you. The possibilities are endless, the talk covers a subset.",
+        "slug": "chat-bots-as-user-interface",
+        "session_format": "Regular Session",
+        "session_level": "Beginner/Intermediate/Advance",
+        "session_image": null,
+        "backgroundColor": "#BE5E9B",
+        "borderColor": "#BE5E9B",
+        "is_serviceSession": false,
+        "is_keynote": false,
+        "is_bookmarked": false,
+        "start_date_time": "2022-10-07 16:00:00",
+        "start_time": "16:00:00",
+        "end_date_time": "2022-10-07 16:40:00",
+        "end_time": "16:40:00",
+        "speakers": [
+          {
+            "name": "Lars Wikman",
+            "tagline": "Code creative. 10x Talker. Elixir/BEAM",
+            "biography": "Code creative. 10x Talker. Elixir/BEAM. Artisanal bullshit. Text, podcasts & videos.\nJust trying to make a button since '96.",
+            "avatar": "https://pbs.twimg.com/profile_images/1566665199150563330/bU2MgPBj_400x400.jpg",
+            "twitter": "https://twitter.com/lawik",
+            "facebook": null,
+            "linkedin": null,
+            "instagram": null,
+            "blog": null,
+            "company_website": null
+          }
+        ],
+        "rooms": []
+      },
+      {
         "id": 21,
         "title": "Going international - using Unicode's CLDR Project in Elixir to localise your software.",
         "description": "Gain an understanding of how you can use gettext and CLDR to build interfaces that cater for international audiences.",
@@ -198,10 +231,10 @@
         "is_serviceSession": false,
         "is_keynote": false,
         "is_bookmarked": false,
-        "start_date_time": "2022-10-07 16:40:00",
-        "start_time": "16:40:00",
-        "end_date_time": "2022-10-07 17:10:00",
-        "end_time": "17:10:00",
+        "start_date_time": "2022-10-07 16:50:00",
+        "start_time": "16:50:00",
+        "end_date_time": "2022-10-07 17:30:00",
+        "end_time": "17:30:00",
         "speakers": [
           {
             "name": "Petrus Janse Van Rensburg",
@@ -231,10 +264,10 @@
         "is_serviceSession": false,
         "is_keynote": false,
         "is_bookmarked": false,
-        "start_date_time": "2022-10-07 17:20:00",
-        "start_time": "17:20:00",
-        "end_date_time": "2022-10-07 18:00:00",
-        "end_time": "18:00:00",
+        "start_date_time": "2022-10-07 17:40:00",
+        "start_time": "17:40:00",
+        "end_date_time": "2022-10-07 18:20:00",
+        "end_time": "18:20:00",
         "speakers": [
           {
             "name": "Larry Weya",
@@ -264,10 +297,10 @@
         "is_serviceSession": true,
         "is_keynote": false,
         "is_bookmarked": false,
-        "start_date_time": "2022-10-07 18:00:00",
-        "start_time": "18:00:00",
-        "end_date_time": "2022-10-07 18:20:00",
-        "end_time": "18:20:00",
+        "start_date_time": "2022-10-07 18:20:00",
+        "start_time": "18:20:00",
+        "end_date_time": "2022-10-07 18:30:00",
+        "end_time": "18:30:00",
         "speakers": [],
         "rooms": []
       }
