@@ -22,7 +22,7 @@
           </div>
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
-            <a href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noopener noreferrer" class="btn-secondary">Get Ticket</a>
+            <a href="https://hopin.com/events/elixirconf-africa-2022/registration" target="_blank" rel="noopener noreferrer" class="btn-secondary">Get Ticket</a>
             <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
           </div>
         </div>
