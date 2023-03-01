@@ -34,7 +34,7 @@
     "typescript": "^4.6.4",
     "vue-carousel": "^0.18.0",
     "vue-social-sharing": "^4.0.0-alpha4",
-    "vue3-carousel": "^0.1.40"
+    "vue3-carousel": "^0.2.11"
   },
   "engines": {
     "node": "16.13.1",
