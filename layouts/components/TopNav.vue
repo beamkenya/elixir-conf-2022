@@ -22,7 +22,7 @@
 
       <div
         id="nav-content"
-        :class="['w-full flex-grow lg:flex w-full lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'dark:bg-secondary-dark pb-2' : 'hidden']"
+        :class="['w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'dark:bg-secondary-dark pb-2' : 'hidden']"
       >
         <div class="w-full ld:w-8/12">
           <ul :class="['list-reset flex-1 lg:flex justify-start lg:justify-center items-center', defaultLayout || !changeColor ? 'text-primary dark:text-primary-dark' : 'text-white dark:text-secondary-dark-text']">
@@ -31,11 +31,11 @@
                 <i class="fa fa-home" /> Home
               </router-link>
             </li>
-            <li class="mr-3">
+            <!-- <li class="mr-3">
               <router-link class="py-2 px-4 inline-block no-underline text-px-13 nav-link " to="/sessions">
                 <i class="fa fa-list" /> Sessions
               </router-link>
-            </li>
+            </li> -->
             <li class="mr-3">
               <router-link class="py-2 px-4 inline-block no-underline text-px-13 nav-link " to="/about">
                 <i class="fa fa-info-circle" /> About
@@ -50,7 +50,7 @@
         </div>
 
         <div :class="['w-full lg:w-4/12 flex-grow flex justify-start lg:justify-end', navVisible ? 'px-2' : '']">
-          <a :class="defaultLayout || !changeColor ? 'btn-primary' : 'btn-secondary'" href="https://hopin.com/events/elixirconf-africa-2022/registration" target="_blank" rel="noreferrer noopener" disabled>Get Ticket</a>
+          <!-- <a :class="defaultLayout || !changeColor ? 'btn-primary' : 'btn-secondary'" href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noreferrer noopener" disabled>Buy Ticket</a> -->
         </div>
       </div>
     </div>

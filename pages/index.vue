@@ -8,13 +8,13 @@
               #The Largest Elixir Conference in Africa
             </h5>
             <h1 class="text-primary dark:text-primary-dark text-4xl md:text-7xl font-bold py-4 md:py-4 -mt-2 md:mt-0">
-              ElixirConfAfr <br> 2022
+              ElixirConfAfr <br> 2023
             </h1>
             <h3 class="pb-2 md:pb-4 title-2-secondary">
               Elixir as a power tool
             </h3>
             <h5 class="text-primary dark:text-primary-dark mt-10 md:mt-0">
-              <i class="fa fa-calendar" /> Conference: 7th Oct 2022
+              <i class="fa fa-calendar" /> Conference: 26th - 27th May 2023
             </h5>
             <h5 class="text-primary dark:text-primary-dark">
               <i class="fa fa-map-marker" /> Virtual, Africa
@@ -22,8 +22,8 @@
           </div>
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
-            <a href="https://hopin.com/events/elixirconf-africa-2022/registration" target="_blank" rel="noopener noreferrer" class="btn-secondary">Get Ticket</a>
-            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
+            <!-- <a href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noopener noreferrer" class="btn-secondary">Buy Ticket</a>
+            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a> -->
           </div>
         </div>
       </div>
