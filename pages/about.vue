@@ -28,9 +28,9 @@
           <shared-title>Organizing Team</shared-title>
         </div>
         <div class="w-full px-0 md:px-24 mr-auto mb-4 md:mb-0 pb-8 lg:pb-16 mt-5 lg:mt-12">
-          <div class="w-full flex flex-wrap grid sm:grid-cols-4 md:grid-cols-5 grid-cols-3 gap-2 lg:gap-8 mb-5 md:mb-0">
+          <div class="w-full flex-wrap grid sm:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 lg:gap-8 mb-5 md:mb-0">
             <a v-for="(member, $index) in members" :key="$index" :href="member.link" class="text-center flex justify-center flex-wrap" target="_blank">
-              <div class="w-24 h-24 md:w-36 md:h-36 p-2 md:p-4 flex justify-center bg-secondary dark:bg-secondary-dark rounded">
+              <div class="w-24 h-24 sm:w-26 sm:h-36 md:w-44 md:h-44 p-2 md:p-4 flex justify-center bg-secondary dark:bg-secondary-dark rounded">
                 <img
                   class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark"
                   :src="member.photo === null ? '/icon.png' : member.photo"
@@ -53,6 +53,12 @@
 <script setup>
 const members = [
   {
+    name: 'Juliet Mukami',
+    photo: '/images/organisers/JulietMukami.jpeg',
+    link: 'https://www.linkedin.com/in/juliet-mukami-8b6476132/',
+    tagline: 'Community Manager',
+  },
+  {
     name: 'Sigu Magwa',
     photo: '/images/organisers/siguinwhiteblurredbg.jpg',
     link: 'https://www.linkedin.com/in/sigu/',
@@ -70,12 +76,12 @@ const members = [
     link: 'https://www.linkedin.com/in/cmush',
     tagline: 'IT Support, Conference Coach',
   },
-  {
-    name: 'Wanjiku Macharia',
-    photo: '/images/organisers/wanjikures.png',
-    link: 'https://www.linkedin.com/in/wanjiku-macharia-b4b95a94',
-    tagline: 'IT Support, Time Keeper',
-  },
+  // {
+  //   name: 'Wanjiku Macharia',
+  //   photo: '/images/organisers/wanjikures.png',
+  //   link: 'https://www.linkedin.com/in/wanjiku-macharia-b4b95a94',
+  //   tagline: 'IT Support, Time Keeper',
+  // },
   {
     name: 'Okoth Kong\'o',
     photo: '/images/organisers/okothres.png',
@@ -106,30 +112,30 @@ const members = [
     link: 'https://www.linkedin.com/in/gettyorawo',
     tagline: 'Creative Director, Co-director',
   },
-  {
-    name: 'Ruyonga Daniel',
-    photo: '/images/organisers/ruyongaDan.png',
-    link: 'https://www.linkedin.com/in/ruyongadaniel/',
-    tagline: 'Sponsors\' Manager, Speakers\' Manager',
-  },
+  // {
+  //   name: 'Ruyonga Daniel',
+  //   photo: '/images/organisers/ruyongaDan.png',
+  //   link: 'https://www.linkedin.com/in/ruyongadaniel/',
+  //   tagline: 'Sponsors\' Manager, Speakers\' Manager',
+  // },
   {
     name: 'Magak Emmanuel',
     photo: '/images/organisers/MagakEmmanuel.jpg',
     link: 'https://www.linkedin.com/in/manuelgeek',
     tagline: 'Creative Director',
   },
-  {
-    name: 'Imo Inyang',
-    photo: '/images/organisers/imo.png',
-    link: 'https://www.linkedin.com/in/imoinyang',
-    tagline: 'Conference Moderator, Speakers\' Manager',
-  },
-  {
-    name: 'Jackie Kaunda',
-    photo: '/images/organisers/wayua.jpg',
-    link: 'https://www.linkedin.com/in/jackline-kaunda-54779b157/',
-    tagline: 'Speakers\' Manager',
-  },
+  // {
+  //   name: 'Imo Inyang',
+  //   photo: '/images/organisers/imo.png',
+  //   link: 'https://www.linkedin.com/in/imoinyang',
+  //   tagline: 'Conference Moderator, Speakers\' Manager',
+  // },
+  // {
+  //   name: 'Jackie Kaunda',
+  //   photo: '/images/organisers/wayua.jpg',
+  //   link: 'https://www.linkedin.com/in/jackline-kaunda-54779b157/',
+  //   tagline: 'Speakers\' Manager',
+  // },
   {
     name: 'Frank Midigo',
     photo: '/images/organisers/frank.jpg',

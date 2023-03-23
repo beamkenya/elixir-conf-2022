@@ -28,7 +28,7 @@
         <div class="w-full md:w-1/3 px-2 md:px-10 py-10 md:py-0">
           <iframe
             class="w-full h-80"
-            src="https://www.youtube.com/embed/3_pQ3CS85Lw"
+            src="https://www.youtube.com/embed/videoseries?list=PLuZrI9EyyBug8dhy3eqPggus9OvQ-9l6Z"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
