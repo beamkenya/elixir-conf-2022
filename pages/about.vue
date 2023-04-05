@@ -7,19 +7,19 @@
       </div>
       <div class="py-4 lg:py-10">
         <p class="md:px-32 px-0">
-          ElixirConfAfr is an annual conference bringing together BEAM enthusiasts for collaboration, networking and learning.
-          <br><br>
-          <!--          Elixir communities around Africa bring you the first of many editions of ElixirConfAfr.-->
-          <!--          This conference will be held virtually and is open to anyone from anywhere around the world, the event will incorporate among other things, technical and non technical talks, with the main focus being how Elixir has been used to craft technological solutions aimed at addressing problems and issues within and outside of Africa.-->
-
-          <!--          <br><br>-->
-          <!--          ElixConfAfr will be held at Greenwich Meridian Time (GMT) to suit attendees all over Africa for a two-day event filled with display of talks and workshops from amazing speakers and teachers.-->
-
-          From the creators of the first ever Elixir Conference that took place in May 2021, we feel indebted and excited to bring you yet another stupendous ElixirConf virtual experience.
-          <br> Ever since their inception, BEAM languages have grown tremendously, we've all in a way witnessed this growth, kind of like parenting :) So, as Elixir/Erlang die hards we are excited to show off the amazing progress the language as made over the years.
-          <br> We've all (or know someone who has) built amazing products and services running on this  language that has a therapeutic effect, and these have gone a long way to provide solutions to various problems we may know about.
-          <br><br>So, this year, as we bring light to the various technologies and trends hooked to Elixir, we'd also like to showcase real life exemplar of how the language has been used effectively as a solution power tool. That's what ElixirConf Africa is about this year.
-          <br><br> Gear up for the amazing roller coaster of amazing talks, game-time sessions, code and coffee booths and above all NETWORKING! Cheers!
+          Welcome to the Elixirconfafrica website, your one-stop destination for the annual Elixir conference for Africa!
+          This conference is designed to create awareness of the Elixir language and its benefits, making it an ideal
+          destination for tech enthusiasts and beginners alike. <br> <br>
+          Our conference covers a wide range of topics related to Elixir, including its libraries and frameworks.
+          Attendees will have the opportunity to learn from industry experts and discover new ways to enhance their
+          projects using this versatile language. <br> <br>
+          But the Elixir conference for Africa is more than just a learning opportunity - it's also a chance to network
+          with like-minded individuals and potentially form partnerships or collaborations. Our conference provides
+          attendees with the chance to interact with other tech enthusiasts and industry experts, gaining inspiration,
+          motivation, and potentially even new career opportunities. <br><br>
+          This year, the Elixir conference for Africa will be a virtual event held on May 26th - 27th, making it easier
+          than ever for anyone to participate. Don't miss out on this opportunity to learn, network, and discover the
+          power of the Elixir language - sign up now and join us for an unforgettable virtual experience!
         </p>
       </div>
 
@@ -29,8 +29,16 @@
         </div>
         <div class="w-full px-0 md:px-24 mr-auto mb-4 md:mb-0 pb-8 lg:pb-16 mt-5 lg:mt-12">
           <div class="w-full flex-wrap grid sm:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 lg:gap-8 mb-5 md:mb-0">
-            <a v-for="(member, $index) in members" :key="$index" :href="member.link" class="text-center flex justify-center flex-wrap" target="_blank">
-              <div class="w-24 h-24 sm:w-26 sm:h-36 md:w-44 md:h-44 p-2 md:p-4 flex justify-center bg-secondary dark:bg-secondary-dark rounded">
+            <a
+              v-for="(member, $index) in members"
+              :key="$index"
+              :href="member.link"
+              class="text-center flex justify-center flex-wrap"
+              target="_blank"
+            >
+              <div
+                class="w-24 h-24 sm:w-26 sm:h-36 md:w-44 md:h-44 p-2 md:p-4 flex justify-center bg-secondary dark:bg-secondary-dark rounded"
+              >
                 <img
                   class="w-full p-0 rounded-full border-2 border-primary dark:border-primary-dark"
                   :src="member.photo === null ? '/icon.png' : member.photo"

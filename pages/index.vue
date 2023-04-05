@@ -22,8 +22,8 @@
           </div>
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
-            <!-- <a href="https://www.eventbrite.com/e/elixirconf-africa-2022-tickets-334392054637" target="_blank" rel="noopener noreferrer" class="btn-secondary">Buy Ticket</a>
-            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2022/" target="_blank" rel="noreferrer noopener">Call For Speakers</a> -->
+            <a href="https://t.co/YpZdlgxwG1" target="_blank" rel="noopener noreferrer" class="btn-secondary">Buy Ticket</a>
+            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2023" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
           </div>
         </div>
       </div>
@@ -35,14 +35,17 @@
           <div class="w-full md:w-2/3">
             <shared-title>About Elixir Conf Africa</shared-title>
             <h4 class="title-2-secondary">
-              The Largest Elixir Conference in Africa
+              ElixirConf Africa 2023 comes back as a Virtual event
             </h4>
 
             <p class="py-4 md:py-8">
-              Elixir communities around Africa bring you the second edition of ElixirConfAfr.
-              This conference will be held virtually and is open to anyone from anywhere around the world, the event will incorporate among other things, technical and non-technical talks, with the main focus being how Elixir has been used to craft technological solutions aimed at addressing problems and issues within and outside of Africa.
-              <br><br>
-              Gear up for the amazing roller coaster of amazing talks, game-time sessions, code and coffee booths and above all NETWORKING! Cheers!
+              Hosting the Conf 2023 gives us great pleasure in being able to bring forth , the Communities together for
+              exquisite learning ,networking sessions , growth and expansion on certain skills presented ; in a bid to
+              ensure we accommodate beamers from all levels . We have tickets already up for sale <a href="https://t.co/YpZdlgxwG1" target="_blank" rel="noopener noreferrer" class="link text-blue-500">here</a> grab one /two and
+              tag a friend along . <br><br>
+              We have avenues for new encouraged ideas and thinking. We get to discover great works being done with Elixir
+              by individuals and companies . It helps those new to the community find their feet, and even greater
+              experience for those who have attended before, to champion and progress the uptake and development of Elixir
             </p>
             <div class="my-5 md:my-14">
               <router-link to="/about" class="btn-accent">
@@ -61,10 +64,19 @@
           <shared-title>Sponsor ElixirConfAfr</shared-title>
         </div>
         <p class="text-white dark:text-secondary-dark-text text-center">
-          Want to become a sponsor? Take a look at our <a class="text-primary dark:text-primary-dark" href="/docs/ElixirConf_Africa_Prospectus.pdf" target="_blank" rel="noopener noreferrer">Sponsorship prospectus</a>
+          Want to become a sponsor? Take a look at our &nbsp; <a
+            class="text-primary dark:text-primary-dark text-xl"
+            href="/docs/ElixirConf_Africa_Prospectus.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Sponsorship
+            prospectus</a>
         </p>
         <div class="flex justify-center pt-3 md:pt-6">
-          <a class="btn-accent" href="mailto:jambo@elixirconf.africa">Become A Sponsor</a>
+          <!-- <a class="btn-accent" href="mailto:jambo@elixirconf.africa">Become A Sponsor</a> -->
+          <router-link class="btn-accent" to="/sponsors">
+            Become A Sponsor
+          </router-link>
         </div>
       </section>
     </div>
