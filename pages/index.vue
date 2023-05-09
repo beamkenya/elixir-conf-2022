@@ -66,7 +66,7 @@
         <p class="text-white dark:text-secondary-dark-text text-center">
           Want to become a sponsor? Take a look at our &nbsp; <a
             class="text-primary dark:text-primary-dark text-xl"
-            href="/docs/ElixirConf_Africa_Prospectus.pdf"
+            href="/docs/ElixirConf_Africa_Prospectus_2023.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >Sponsorship
