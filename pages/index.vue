@@ -23,7 +23,7 @@
           <count-days />
           <div class="space-x-3 mt-5 md:mt-10 flex justify-center md:justify-start">
             <a href="https://t.co/YpZdlgxwG1" target="_blank" rel="noopener noreferrer" class="btn-secondary">Buy Ticket</a>
-            <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2023" target="_blank" rel="noreferrer noopener">Call For Speakers</a>
+            <!-- <a class="btn-accent" href="https://sessionize.com/elixir-conf-africa-2023" target="_blank" rel="noreferrer noopener">Call For Speakers</a> -->
           </div>
         </div>
       </div>
@@ -80,6 +80,6 @@
         </div>
       </section>
     </div>
-    <home-sponsors />
+    <!-- <home-sponsors /> -->
   </div>
 </template>

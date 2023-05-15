@@ -1,5 +1,5 @@
 <template>
-  <nav :class="['w-full py-3 md:py-3 fixed w-full z-10 top-0', changeColor ? 'bg-transparent' : 'bg-white dark:bg-dark border-b border-b-gray dark:border-0']">
+  <nav :class="['w-full py-3 md:py-3 fixed z-10 top-0', changeColor ? 'bg-transparent' : 'bg-white dark:bg-dark border-b border-b-gray dark:border-0']">
     <div class="d-container flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 text-white dark:text-secondary-dark-text mr-6">
         <router-link to="/">
@@ -22,7 +22,7 @@
 
       <div
         id="nav-content"
-        :class="['w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'dark:bg-secondary-dark pb-2' : 'hidden']"
+        :class="['w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-2 lg:pt-0', navVisible ? 'bg-white dark:bg-secondary-dark pb-2' : 'hidden']"
       >
         <div class="w-full ld:w-8/12">
           <ul :class="['list-reset flex-1 lg:flex justify-start lg:justify-center items-center', defaultLayout || !changeColor ? 'text-primary dark:text-primary-dark' : 'text-white dark:text-secondary-dark-text']">
@@ -46,10 +46,20 @@
                 <i class="fa fa-credit-card" /> Sponsors
               </router-link>
             </li>
+            <div class="dropdown dropdown-bottom">
+              <label tabindex="0" class="px-4"><i class="fa fa-calendar" /> Past Events <i class="fa fa-caret-down" /></label>
+              <ul tabindex="0" class="dropdown-content menu bg-white dark:bg-dark shadow rounded-lg w-52 mt-1">
+                <li>
+                  <router-link class="inline-block no-underline  py-2 px-4 text-px-13 nav-link" to="/past-events/2022">
+                    Elixirconf 2022
+                  </router-link>
+                </li>
+              </ul>
+            </div>
           </ul>
         </div>
 
-        <div :class="['w-full lg:w-4/12 flex-grow flex justify-start lg:justify-end', navVisible ? 'px-2' : '']">
+        <div :class="['w-full lg:w-4/12 flex-grow flex justify-start lg:justify-end', navVisible ? 'px-2 mt-2 md:mt-0' : '']">
           <a :class="defaultLayout || !changeColor ? 'btn-primary' : 'btn-secondary'" href="https://t.co/YpZdlgxwG1" target="_blank" rel="noreferrer noopener" disabled>Buy Ticket</a>
         </div>
       </div>
