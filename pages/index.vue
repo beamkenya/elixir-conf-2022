@@ -80,6 +80,6 @@
         </div>
       </section>
     </div>
-    <!-- <home-sponsors /> -->
+    <home-sponsors />
   </div>
 </template>
