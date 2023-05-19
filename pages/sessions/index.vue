@@ -4,10 +4,22 @@
       <shared-banner>Sessions</shared-banner>
       <div class="w-full flex flex-wrap mt-2 md:mt-4">
         <div v-if="!pending" class="w-full container mx-auto flex flex-wrap px-0 md:px-12 py-4">
-          <div class="flex flex-row lg:flex-col w-full lg:w-1/12 h-auto lg:h-64 bor border-r-0 lg:border-r border-primary dark:border-primary-dark space-y-0 lg:space-y-6 space-x-6 lg:space-x-0 items-center lg:items-start justify-center lg:justify-start py-2 lg:py-0 sticky nav-bg nav-side z-30">
-            <div v-for="(days, $index, $key) in schedule" :key="$key" :class="['w-4/12 px-3 py-1 lg:w-full cursor-pointer rounded-tl-lg rounded-bl-lg rounded-r-lg lg:rounded-r-none', currentTab === $key ? 'bg-primary dark:bg-primary-dark' : 'border border-r-1 lg:border-r-0 border-primary dark:border-primary-dark' ]" @click.prevent="showTab($key)">
-              <h4 :class="['text-px-16-slab', currentTab === $key ? 'text-white dark:text-secondary-dark-text' : 'text-primary dark:text-primary-dark']">
-                {{ $timeDay($index) }} <small :class="['text-px-13 capitalize', currentTab === $key ? 'text-white dark:text-secondary-dark-text' : 'text-primary dark:text-primary-dark']">Day {{ $key+1 }}</small>
+          <div
+            class="flex flex-row lg:flex-col w-full lg:w-1/12 h-auto lg:h-64 bor border-r-0 lg:border-r border-primary dark:border-primary-dark space-y-0 lg:space-y-6 space-x-6 lg:space-x-0 items-center lg:items-start justify-center lg:justify-start py-2 lg:py-0 sticky nav-bg nav-side z-30"
+          >
+            <div
+              v-for="(days, $index, $key) in schedule"
+              :key="$key"
+              :class="['w-4/12 px-3 py-1 lg:w-full cursor-pointer rounded-tl-lg rounded-bl-lg rounded-r-lg lg:rounded-r-none', currentTab === $key ? 'bg-primary dark:bg-primary-dark' : 'border border-r-1 lg:border-r-0 border-primary dark:border-primary-dark']"
+              @click.prevent="showTab($key)"
+            >
+              <h4
+                :class="['text-px-16-slab', currentTab === $key ? 'text-white dark:text-secondary-dark-text' : 'text-primary dark:text-primary-dark']"
+              >
+                {{ $timeDay($index) }} <small
+                  :class="['text-px-13 capitalize', currentTab === $key ? 'text-white dark:text-secondary-dark-text' : 'text-primary dark:text-primary-dark']"
+                >Day
+                  {{ $key + 1 }}</small>
               </h4>
             </div>
           </div>
@@ -25,15 +37,27 @@
                 <div v-if="currentTab === $key" class="flex-wrap w-full flex space-y-6 mb-2 lg:mb-10">
                   <div v-if="days.length > 0 && config.isEventLive">
                     <div v-for="(session, $ind) in days" :key="$ind" class="flex w-full px-0 lg:px-2 mb-8 lg:mb-10">
-                      <div :class="['w-2/12 flex items-center justify-center text-right hidden lg:grid', session.is_serviceSession ? 'h-24' : 'h-44']">
+                      <div
+                        :class="['w-2/12 flex items-center justify-center text-right hidden lg:grid', session.is_serviceSession ? 'h-24' : 'h-44']"
+                      >
                         <h3 class="text-px-14-slab text-primary dark:text-primary-dark uppercase">
                           {{ $time(session.start_date_time) }} <br> {{ $timeAm(session.start_date_time) }}
                         </h3>
                       </div>
                       <div class="w-full lg:w-10/12 flex rounded-tr-lg rounded-br-lg">
-                        <nuxt-link v-if="!session.is_serviceSession" :to="'/sessions/' + session.slug" class="h-20 w-20  lg:h-44 lg:w-44 shadow-lg flex-none bg-cover rounded-tl rounded-bl text-center overflow-hidden">
+                        <nuxt-link
+                          v-if="!session.is_serviceSession || (session.is_serviceSession && session.speakers.length === 1)"
+                          :to="'/sessions/' + session.slug"
+                          class="h-20 w-20  lg:h-44 lg:w-44 shadow-lg flex-none bg-cover rounded-tl rounded-bl text-center overflow-hidden"
+                        >
                           <div v-if="session.speakers.length === 1">
-                            <img v-for="(speaker, $i) in session.speakers" :key="$i" :src="speaker.avatar" :alt="speaker.name" :title="speaker.name">
+                            <img
+                              v-for="(speaker, $i) in session.speakers"
+                              :key="$i"
+                              :src="speaker.avatar"
+                              :alt="speaker.name"
+                              :title="speaker.name"
+                            >
                           </div>
                           <div v-else>
                             <client-only>
@@ -55,8 +79,15 @@
                             </client-only>
                           </div>
                         </nuxt-link>
-                        <div v-else class="h-12 w-20 lg:h-28 lg:w-44 flex-none bg-cover rounded-tl rounded-bl text-center overflow-hidden" style="background-image: url('/images/speakers/arrive.png')" :title="session.title" />
-                        <div :class="['h-auto w-full shadow-lg rounded-tr-lg bg-white dark:bg-dark rounded-br-lg px-4 flex flex-col justify-between', session.is_serviceSession ? 'lg:h-28 py-2': 'lg:h-44 py-1']">
+                        <div
+                          v-else
+                          class="h-12 w-20 lg:h-28 lg:w-44 flex-none bg-cover rounded-tl rounded-bl text-center overflow-hidden"
+                          style="background-image: url('/images/speakers/arrive.png')"
+                          :title="session.title"
+                        />
+                        <div
+                          :class="['h-auto w-full shadow-lg rounded-tr-lg bg-white dark:bg-dark rounded-br-lg px-4 flex flex-col justify-between', session.is_serviceSession ? 'lg:h-28 py-2' : 'lg:h-44 py-1']"
+                        >
                           <div class="flex flex-wrap items-start">
                             <div class="md:w-12/12">
                               <nuxt-link v-if="!session.is_serviceSession" :to="'/sessions/' + session.slug">
@@ -79,15 +110,20 @@
                                 {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }}
                                 <!--                                | <span v-for="(room, $r) in session.rooms" :key="$r">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span> </span>-->
                               </div>
-                              <div v-if="!session.is_serviceSession" class="text-sm text-secondary dark:text-primary-dark pt-3">
+                              <div
+                                v-if="!session.is_serviceSession || (session.is_serviceSession && session.speakers.length === 1)"
+                                class="text-sm text-secondary dark:text-primary-dark pt-3"
+                              >
                                 <i class="fa fa-user pr-1" /> <span v-for="(speaker, $s) in session.speakers" :key="$s"><a
                                   :href="speaker.twitter"
-                                >{{ speaker.name }}</a><span v-if="$s+1 < session.speakers.length">, </span> </span>
+                                >{{ speaker.name }}</a><span
+                                  v-if="$s + 1 < session.speakers.length"
+                                >, </span> </span>
                               </div>
                             </div>
-                          <!--                            <div class="w-2/12 flex items-center justify-center">-->
-                          <!--                              <star-session v-if="!session.is_serviceSession" :session-id="session.id" :is-bookmarked="session.is_bookmarked" :session-slug="session.slug" />-->
-                          <!--                            </div>-->
+                            <!--                            <div class="w-2/12 flex items-center justify-center">-->
+                            <!--                              <star-session v-if="!session.is_serviceSession" :session-id="session.id" :is-bookmarked="session.is_bookmarked" :session-slug="session.slug" />-->
+                            <!--                            </div>-->
                           </div>
                         </div>
                       </div>
@@ -139,14 +175,16 @@ onMounted(() => {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .nav-side {
   top: 52px;
+
   @media screen and (max-width: 360px) {
-    top:60px;
+    top: 60px;
   }
-}
-</style>
+}</style>
