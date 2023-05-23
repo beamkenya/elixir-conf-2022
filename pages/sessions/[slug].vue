@@ -74,7 +74,7 @@
                 {{ session.title }}
               </p>
               <p class="text-sm text-dark-text dark:text-dark-text-dark uppercase mt-1">
-                {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }}
+                {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }} (GMT+3)
                 <!--                | <span v-for="(room, $r) in session.rooms" :key="$r" class="green-dark">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span>  </span>-->
               <!--              | <span :style="{ color: session.backgroundColor }">{{ session.session_format }}</span>-->
               </p>

@@ -41,7 +41,7 @@
                         :class="['w-2/12 flex items-center justify-center text-right hidden lg:grid', session.is_serviceSession ? 'h-24' : 'h-44']"
                       >
                         <h3 class="text-px-14-slab text-primary dark:text-primary-dark uppercase">
-                          {{ $time(session.start_date_time) }} <br> {{ $timeAm(session.start_date_time) }}
+                          {{ $time(session.start_date_time) }} <br> {{ $timeAm(session.start_date_time) }} <br> (GMT+3)
                         </h3>
                       </div>
                       <div class="w-full lg:w-10/12 flex rounded-tr-lg rounded-br-lg">
@@ -107,7 +107,7 @@
                                 </div>
                               </div>
                               <div class="text-xs text-dark-text dark:text-dark-text-dark  uppercase mt-2">
-                                {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }}
+                                {{ $hour(session.start_date_time) }} - {{ $hour(session.end_date_time) }} (GMT+3)
                                 <!--                                | <span v-for="(room, $r) in session.rooms" :key="$r">{{ room.title }}<span v-if="$r+1 < session.rooms.length">, </span> </span>-->
                               </div>
                               <div
