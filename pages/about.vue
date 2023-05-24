@@ -64,7 +64,7 @@ const members = [
     name: 'Juliet Mukami',
     photo: '/images/organisers/JulietMukami.jpeg',
     link: 'https://www.linkedin.com/in/juliet-mukami-8b6476132/',
-    tagline: 'Community Manager',
+    tagline: 'Lead Organiser',
   },
   {
     name: 'Sigu Magwa',
