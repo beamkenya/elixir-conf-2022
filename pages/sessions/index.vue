@@ -86,7 +86,7 @@
                           :title="session.title"
                         />
                         <div
-                          :class="['h-auto w-full shadow-lg rounded-tr-lg bg-white dark:bg-dark rounded-br-lg px-4 flex flex-col justify-between', session.is_serviceSession ? 'lg:h-28 py-2' : 'lg:h-44 py-1']"
+                          :class="['h-auto w-full shadow-lg rounded-tr-lg bg-white dark:bg-dark rounded-br-lg px-4 flex flex-col justify-between', !session.is_serviceSession || (session.is_serviceSession && session.speakers.length === 1) ? 'lg:h-44 py-1' : 'lg:h-28 py-2']"
                         >
                           <div class="flex flex-wrap items-start">
                             <div class="md:w-12/12">
