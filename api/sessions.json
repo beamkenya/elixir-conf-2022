@@ -342,7 +342,7 @@
       {
         "id": 21,
         "title": "AI for  everyone ",
-        "description": "Gain an understanding of how you can use gettext and CLDR to build interfaces that cater for international audiences.",
+        "description": "AI, on the backs of Chat GPT-3 capturing the business world’s attention, has taken the world by storm. In the Elixir ecosystem, it’s no longer necessary to even understand what a neural network is, but still use the nearly limitless power of machine learning and artificial intelligence.\nToday, with Bumblebee on top, we can grab enterprise-grade artificial intelligence models off-the-shelf and create production-tier machine learning features in 60 minutes or less!\n In this talk, we will explore the following: \n* Grabbing free enterprise-grade AI models from Hugging Face and integrating it into your app in minutes.\n* Integrating this seamlessly with LiveView and PubSub. \n* Using AI to solve high-level hard problems instantly \n * And we will do a short dive into Nx and Axon to see how all of this works, for customization, understanding, and maximum power",
         "slug": "ai-for-everyone",
         "session_format": "Regular Session",
         "session_level": "Intermediate",
